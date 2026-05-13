@@ -1,6 +1,6 @@
 # Paperclip Source Update Check
 
-- Checked UTC: `2026-05-13T14:37:39Z`
+- Checked UTC: `2026-05-13T14:41:14Z`
 - Update needed: `false`
 
 ## Reasons
@@ -79,7 +79,7 @@
 
 ```json
 {
-  "checked_utc": "2026-05-13T14:37:27Z",
+  "checked_utc": "2026-05-13T14:40:59Z",
   "repos": {
     "paperclip_repo": {
       "repo": "paperclipai/paperclip",

@@ -117,7 +117,7 @@ def write_json(path: Path, data: dict[str, Any]) -> None:
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
-def diff_state(stored: dict[str, Any], latest: dict[str, Any]) -> list[str]:
+def diff_state(stored: dict[str, Any], latest: dict[str, Any], compare_site_fingerprints: bool = False) -> list[str]:
     reasons: list[str] = []
     for key, item in latest.get("repos", {}).items():
         old = stored.get("repos", {}).get(key, {})
@@ -127,9 +127,14 @@ def diff_state(stored: dict[str, Any], latest: dict[str, Any]) -> list[str]:
             reasons.append(f"{item['repo']} check failed: {item['error']}")
     for key, item in latest.get("sites", {}).items():
         old = stored.get("sites", {}).get(key, {})
-        if old.get("sha256") and item.get("sha256") and old.get("sha256") != item.get("sha256"):
+        if (
+            compare_site_fingerprints
+            and old.get("sha256")
+            and item.get("sha256")
+            and old.get("sha256") != item.get("sha256")
+        ):
             reasons.append(f"{item['url']} fingerprint changed.")
-        elif item.get("error"):
+        if item.get("error"):
             reasons.append(f"{item['url']} check failed: {item['error']}")
     for package, item in latest.get("npm", {}).items():
         old = stored.get("npm", {}).get(package, {})
@@ -171,11 +176,16 @@ def main() -> int:
     parser.add_argument("--state", type=Path, default=DEFAULT_STATE)
     parser.add_argument("--report", type=Path, default=DEFAULT_REPORT)
     parser.add_argument("--refresh-state", action="store_true")
+    parser.add_argument(
+        "--compare-site-fingerprints",
+        action="store_true",
+        help="Also treat rendered docs-site fingerprint changes as update triggers. Disabled by default because the site can emit dynamic HTML.",
+    )
     args = parser.parse_args()
 
     stored = load_state(args.state)
     latest = collect_state()
-    reasons = [] if args.refresh_state else diff_state(stored, latest)
+    reasons = [] if args.refresh_state else diff_state(stored, latest, args.compare_site_fingerprints)
 
     if args.refresh_state:
         write_json(args.state, latest)
