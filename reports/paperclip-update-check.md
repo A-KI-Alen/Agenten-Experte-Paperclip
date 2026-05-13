@@ -1,6 +1,6 @@
 # Paperclip Source Update Check
 
-- Checked UTC: `2026-05-13T14:41:14Z`
+- Checked UTC: `2026-05-13T14:44:26Z`
 - Update needed: `false`
 
 ## Reasons
@@ -11,7 +11,7 @@
 
 ```json
 {
-  "checked_utc": "2026-05-13T14:36:21Z",
+  "checked_utc": "2026-05-13T14:44:14Z",
   "repos": {
     "paperclip_repo": {
       "repo": "paperclipai/paperclip",
@@ -40,6 +40,18 @@
     "companies_tool_repo": {
       "repo": "paperclipai/companies-tool",
       "latest_commit": "64b0c65ae4b64cf118343864848c02b7a302645d"
+    },
+    "pr_reviewer_repo": {
+      "repo": "paperclipai/pr-reviewer",
+      "latest_commit": "3b1dc99f3ca2059d7bf47a7772f832973f5a2fde"
+    },
+    "clipmart_repo": {
+      "repo": "paperclipai/clipmart",
+      "error": "HTTP Error 403: rate limit exceeded"
+    },
+    "org_profile_repo": {
+      "repo": "paperclipai/.github",
+      "error": "HTTP Error 403: rate limit exceeded"
     }
   },
   "sites": {
@@ -79,7 +91,7 @@
 
 ```json
 {
-  "checked_utc": "2026-05-13T14:40:59Z",
+  "checked_utc": "2026-05-13T14:44:14Z",
   "repos": {
     "paperclip_repo": {
       "repo": "paperclipai/paperclip",
@@ -108,6 +120,18 @@
     "companies_tool_repo": {
       "repo": "paperclipai/companies-tool",
       "latest_commit": "64b0c65ae4b64cf118343864848c02b7a302645d"
+    },
+    "pr_reviewer_repo": {
+      "repo": "paperclipai/pr-reviewer",
+      "latest_commit": "3b1dc99f3ca2059d7bf47a7772f832973f5a2fde"
+    },
+    "clipmart_repo": {
+      "repo": "paperclipai/clipmart",
+      "error": "HTTP Error 403: rate limit exceeded"
+    },
+    "org_profile_repo": {
+      "repo": "paperclipai/.github",
+      "error": "HTTP Error 403: rate limit exceeded"
     }
   },
   "sites": {

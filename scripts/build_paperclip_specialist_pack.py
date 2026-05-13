@@ -162,6 +162,24 @@ role = "company-tool-source"
 access = "READ_ONLY"
 use_for = ["npx companies tool", "template install behavior"]
 
+[[repository_sources]]
+id = "paperclipai/pr-reviewer"
+role = "adjacent-tool-source"
+access = "READ_ONLY"
+use_for = ["PR triage UI context", "adjacent Paperclip tooling"]
+
+[[repository_sources]]
+id = "paperclipai/clipmart"
+role = "adjacent-product-source"
+access = "READ_ONLY"
+use_for = ["agent company marketplace context", "future product direction"]
+
+[[repository_sources]]
+id = "paperclipai/.github"
+role = "org-profile-source"
+access = "READ_ONLY"
+use_for = ["organization profile", "community metadata"]
+
 activation = """
 Der CEO aktiviert diesen Spezialisten, wenn ein Issue nach zwei echten Debugger-Runs
 nicht geloest ist und Hinweise auf Paperclip, Agents, Companies, Heartbeats,
@@ -214,6 +232,9 @@ def write_sources(out_dir: Path, source_meta: dict[str, object]) -> None:
 - `paperclipai/hermes-paperclip-adapter`: Hermes adapter source.
 - `paperclipai/companies`: example company/template source.
 - `paperclipai/companies-tool`: npx companies tool source.
+- `paperclipai/pr-reviewer`: adjacent PR triage UI.
+- `paperclipai/clipmart`: adjacent marketplace/product source.
+- `paperclipai/.github`: organization profile/community metadata.
 
 ## Package/Release Sources
 

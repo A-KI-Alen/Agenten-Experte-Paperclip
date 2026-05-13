@@ -26,6 +26,9 @@ REPOS: dict[str, str] = {
     "hermes_adapter_repo": "paperclipai/hermes-paperclip-adapter",
     "companies_repo": "paperclipai/companies",
     "companies_tool_repo": "paperclipai/companies-tool",
+    "pr_reviewer_repo": "paperclipai/pr-reviewer",
+    "clipmart_repo": "paperclipai/clipmart",
+    "org_profile_repo": "paperclipai/.github",
 }
 
 SITES: dict[str, str] = {
