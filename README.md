@@ -8,8 +8,8 @@ read-only retrieval instructions for a Paperclip specialist agent.
 The full transformed `Paperclip_Docu.md` crawl is intentionally not included in
 this public repository because the current official Paperclip documentation is
 licensed under CC BY-NC-ND 4.0. The public repo records hashes, source state,
-headings and retrieval instructions. The full local snapshot can be used
-privately for internal RAG/debugging.
+headings and retrieval instructions. The private full-text companion is
+`A-KI-Alen/Agenten-Experte-Paperclip-Private`.
 
 ## What Is Included
 
@@ -35,6 +35,7 @@ scripts/
 - https://github.com/paperclipai/paperclip-docs
 - https://docs.paperclip.ing/
 - https://paperclip.ing/docs
+- Private full-text companion: `A-KI-Alen/Agenten-Experte-Paperclip-Private`
 
 Additional secondary sources are listed in `programs/paperclip/SOURCES.md`.
 

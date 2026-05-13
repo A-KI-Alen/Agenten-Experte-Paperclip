@@ -109,10 +109,12 @@ def write_profile(out_dir: Path) -> None:
 name = "Paperclip Specialist"
 type = "program-specialist"
 permissions = "READ_ONLY"
-source_docs = ["private-local:Paperclip_Docu.md", "https://docs.paperclip.ing/", "https://paperclip.ing/docs"]
+private_knowledge_repo = "A-KI-Alen/Agenten-Experte-Paperclip-Private"
+private_knowledge_path = "programs/paperclip/raw/Paperclip_Docu.md"
+source_docs = ["private-repo:A-KI-Alen/Agenten-Experte-Paperclip-Private/programs/paperclip/raw/Paperclip_Docu.md", "https://docs.paperclip.ing/", "https://paperclip.ing/docs"]
 entrypoints = ["SOURCE.md", "DOCS_INDEX.md", "TOPIC_MAP.md", "RETRIEVAL.md", "SOURCES.md"]
 knowledge_layers = [
-  "docs_rag_private: lokaler Paperclip_Docu.md Snapshot fuer internen Retrieval-Kontext",
+  "docs_rag_private: privater Paperclip_Docu.md Volltext-Snapshot in A-KI-Alen/Agenten-Experte-Paperclip-Private",
   "docs_public: offizielle Paperclip-Dokuquellen und Docs-Repositories",
   "code_read: read-only Quellcode-Recherche im Hauptrepo fuer Stacktraces, Services, API, UI und DB",
   "issue_pr_read: read-only GitHub-Issue-/PR-Recherche fuer neue, ungeloeste oder schlecht dokumentierte Bugs",
@@ -314,12 +316,13 @@ def write_retrieval(out_dir: Path) -> None:
 
 Der Spezialist laedt zuerst `SOURCE.md`, `SOURCES.md`, `TOPIC_MAP.md` und
 `DOCS_INDEX.md`. Danach wird nur der relevante Ausschnitt aus offiziellen Quellen
-oder dem privaten lokalen Snapshot gelesen.
+oder dem privaten Volltext-Repo gelesen.
 
 ## Local Private Snapshot
 
 ```powershell
-rg -n "Heartbeat|adapter|workspace|approval|budget|PAPERCLIP_API_KEY" "<local-private-path>\\Paperclip_Docu.md"
+gh repo clone A-KI-Alen/Agenten-Experte-Paperclip-Private .cache/repos/Agenten-Experte-Paperclip-Private
+rg -n "Heartbeat|adapter|workspace|approval|budget|PAPERCLIP_API_KEY" ".cache/repos/Agenten-Experte-Paperclip-Private/programs/paperclip/raw/Paperclip_Docu.md"
 ```
 
 Der private Snapshot darf fuer internes RAG/Debugging genutzt werden, wird aber
@@ -377,7 +380,7 @@ def write_source(out_dir: Path, source_meta: dict[str, object]) -> None:
 
 - Program: Paperclip
 - Public source of truth: official Paperclip repos and docs sites listed in `SOURCES.md`.
-- Private retrieval source: local `Paperclip_Docu.md` snapshot, hash recorded below.
+- Private retrieval source: `A-KI-Alen/Agenten-Experte-Paperclip-Private`, path `programs/paperclip/raw/Paperclip_Docu.md`.
 - Permission model: read-only specialist knowledge. Fixes are implemented by the Debugger, not by the specialist.
 - Publication rule: do not store the transformed Paperclip docs full text in this public repo while docs are CC BY-NC-ND 4.0.
 
@@ -406,6 +409,8 @@ def source_meta(source: Path, text: str, headings: list[Heading]) -> dict[str, o
         "program": "paperclip",
         "local_snapshot_name": "Paperclip_Docu.md",
         "local_snapshot_publication": "not_included_due_to_CC_BY_NC_ND_docs_license",
+        "private_repo": "A-KI-Alen/Agenten-Experte-Paperclip-Private",
+        "private_snapshot_path": "programs/paperclip/raw/Paperclip_Docu.md",
         "local_snapshot_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
         "local_snapshot_bytes": stat.st_size,
         "local_snapshot_last_write_utc": datetime.fromtimestamp(stat.st_mtime, timezone.utc)

@@ -2,12 +2,13 @@
 
 Der Spezialist laedt zuerst `SOURCE.md`, `SOURCES.md`, `TOPIC_MAP.md` und
 `DOCS_INDEX.md`. Danach wird nur der relevante Ausschnitt aus offiziellen Quellen
-oder dem privaten lokalen Snapshot gelesen.
+oder dem privaten Volltext-Repo gelesen.
 
 ## Local Private Snapshot
 
 ```powershell
-rg -n "Heartbeat|adapter|workspace|approval|budget|PAPERCLIP_API_KEY" "<local-private-path>\Paperclip_Docu.md"
+gh repo clone A-KI-Alen/Agenten-Experte-Paperclip-Private .cache/repos/Agenten-Experte-Paperclip-Private
+rg -n "Heartbeat|adapter|workspace|approval|budget|PAPERCLIP_API_KEY" ".cache/repos/Agenten-Experte-Paperclip-Private/programs/paperclip/raw/Paperclip_Docu.md"
 ```
 
 Der private Snapshot darf fuer internes RAG/Debugging genutzt werden, wird aber

@@ -2,7 +2,7 @@
 
 - Program: Paperclip
 - Public source of truth: official Paperclip repos and docs sites listed in `SOURCES.md`.
-- Private retrieval source: local `Paperclip_Docu.md` snapshot, hash recorded below.
+- Private retrieval source: `A-KI-Alen/Agenten-Experte-Paperclip-Private`, path `programs/paperclip/raw/Paperclip_Docu.md`.
 - Permission model: read-only specialist knowledge. Fixes are implemented by the Debugger, not by the specialist.
 - Publication rule: do not store the transformed Paperclip docs full text in this public repo while docs are CC BY-NC-ND 4.0.
 
@@ -13,6 +13,8 @@
   "program": "paperclip",
   "local_snapshot_name": "Paperclip_Docu.md",
   "local_snapshot_publication": "not_included_due_to_CC_BY_NC_ND_docs_license",
+  "private_repo": "A-KI-Alen/Agenten-Experte-Paperclip-Private",
+  "private_snapshot_path": "programs/paperclip/raw/Paperclip_Docu.md",
   "local_snapshot_sha256": "e1f388e926bab1befdba9b0dc0dd3dfd0750ba9ae6961a27eac09f1957673172",
   "local_snapshot_bytes": 1006954,
   "local_snapshot_last_write_utc": "2026-05-08T08:54:46Z",

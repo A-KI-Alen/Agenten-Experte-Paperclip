@@ -2,10 +2,12 @@ id = "paperclip-specialist"
 name = "Paperclip Specialist"
 type = "program-specialist"
 permissions = "READ_ONLY"
-source_docs = ["private-local:Paperclip_Docu.md", "https://docs.paperclip.ing/", "https://paperclip.ing/docs"]
+private_knowledge_repo = "A-KI-Alen/Agenten-Experte-Paperclip-Private"
+private_knowledge_path = "programs/paperclip/raw/Paperclip_Docu.md"
+source_docs = ["private-repo:A-KI-Alen/Agenten-Experte-Paperclip-Private/programs/paperclip/raw/Paperclip_Docu.md", "https://docs.paperclip.ing/", "https://paperclip.ing/docs"]
 entrypoints = ["SOURCE.md", "DOCS_INDEX.md", "TOPIC_MAP.md", "RETRIEVAL.md", "SOURCES.md"]
 knowledge_layers = [
-  "docs_rag_private: lokaler Paperclip_Docu.md Snapshot fuer internen Retrieval-Kontext",
+  "docs_rag_private: privater Paperclip_Docu.md Volltext-Snapshot in A-KI-Alen/Agenten-Experte-Paperclip-Private",
   "docs_public: offizielle Paperclip-Dokuquellen und Docs-Repositories",
   "code_read: read-only Quellcode-Recherche im Hauptrepo fuer Stacktraces, Services, API, UI und DB",
   "issue_pr_read: read-only GitHub-Issue-/PR-Recherche fuer neue, ungeloeste oder schlecht dokumentierte Bugs",
