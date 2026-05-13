@@ -1,0 +1,55 @@
+name: Paperclip Source Sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 4 1,15 * *"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  paperclip-source-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Check Paperclip public sources
+        id: check
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python scripts/check_paperclip_sources.py \
+            --state programs/paperclip/state/upstream_state.json \
+            --report reports/paperclip-update-check.md
+
+      - name: Open refresh issue when sources changed
+        if: steps.check.outputs.update_needed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing="$(gh issue list \
+            --repo "$GITHUB_REPOSITORY" \
+            --state open \
+            --label paperclip-doc-sync \
+            --json number \
+            --jq '.[0].number // ""')"
+
+          if [ -n "$existing" ]; then
+            echo "Open sync issue already exists: #$existing"
+            exit 0
+          fi
+
+          gh issue create \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "Refresh Paperclip private docs snapshot and specialist index" \
+            --label paperclip-doc-sync \
+            --body-file reports/paperclip-update-check.md
