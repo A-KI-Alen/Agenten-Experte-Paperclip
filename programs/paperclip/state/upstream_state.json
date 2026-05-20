@@ -1,37 +1,37 @@
 {
-  "checked_utc": "2026-05-13T14:44:14Z",
+  "checked_utc": "2026-05-20T04:36:54Z",
   "repos": {
     "paperclip_repo": {
       "repo": "paperclipai/paperclip",
-      "latest_commit": "b947a7d76c331b3ce4069d3be0ade25cc89b1b90"
+      "error": "HTTP Error 403: rate limit exceeded"
     },
     "paperclip_docs_repo": {
       "repo": "paperclipai/paperclip-docs",
-      "latest_commit": "1aace19c1ab6f95e45e77c7a4ca980ca598a6283"
+      "error": "HTTP Error 403: rate limit exceeded"
     },
     "paperclip_legacy_docs_repo": {
       "repo": "paperclipai/docs",
-      "latest_commit": "b3704410bd7041733184efb6e4cbee658d9af1b2"
+      "error": "HTTP Error 403: rate limit exceeded"
     },
     "paperclip_website_repo": {
       "repo": "paperclipai/paperclip-website",
-      "latest_commit": "45d922f52aa4ebe43df35979a7517a0e8981dc7e"
+      "error": "HTTP Error 403: rate limit exceeded"
     },
     "hermes_adapter_repo": {
       "repo": "paperclipai/hermes-paperclip-adapter",
-      "latest_commit": "5fd1efc105c5fbef3bd7463df66a1d91af2e3ec6"
+      "error": "HTTP Error 403: rate limit exceeded"
     },
     "companies_repo": {
       "repo": "paperclipai/companies",
-      "latest_commit": "514503bf4f0ca88ebf16d5dc648e085d587f268f"
+      "error": "HTTP Error 403: rate limit exceeded"
     },
     "companies_tool_repo": {
       "repo": "paperclipai/companies-tool",
-      "latest_commit": "64b0c65ae4b64cf118343864848c02b7a302645d"
+      "error": "HTTP Error 403: rate limit exceeded"
     },
     "pr_reviewer_repo": {
       "repo": "paperclipai/pr-reviewer",
-      "latest_commit": "3b1dc99f3ca2059d7bf47a7772f832973f5a2fde"
+      "error": "HTTP Error 403: rate limit exceeded"
     },
     "clipmart_repo": {
       "repo": "paperclipai/clipmart",
@@ -54,22 +54,22 @@
   },
   "npm": {
     "paperclipai": {
-      "version": "2026.512.0"
+      "version": "2026.517.0"
     },
     "@paperclipai/server": {
-      "version": "2026.512.0"
+      "version": "2026.517.0"
     },
     "@paperclipai/plugin-sdk": {
-      "version": "2026.512.0"
+      "version": "2026.517.0"
     },
     "@paperclipai/mcp-server": {
-      "version": "2026.512.0"
+      "version": "2026.517.0"
     },
     "@paperclipai/ui": {
-      "version": "2026.512.0"
+      "version": "2026.517.0"
     },
     "@paperclipai/db": {
-      "version": "2026.512.0"
+      "version": "2026.517.0"
     }
   }
 }

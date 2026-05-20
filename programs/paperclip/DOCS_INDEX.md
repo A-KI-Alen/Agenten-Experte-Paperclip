@@ -6,1054 +6,1501 @@
 
 ## activity_debugging
 
-  - L725: H2 Troubleshooting
-  - L925: H2 Troubleshooting
-  - L1026: H2 Reading the run transcript
-  - L1183: H2 Recent Activity Feed
-  - L1548: H2 The Activity tab
-- L2256: H1 Activity Log
-  - L2282: H2 Reading the Activity Log
-  - L2301: H2 Using Activity to Debug
-  - L2333: H2 The Activity Log Is Permanent
-  - L4220: H2 Health and troubleshooting
-  - L5254: H2 Runtime logs tab
-  - L5340: H2 Troubleshooting checklist
-  - L6646: H2 7. Troubleshooting
-  - L6968: H2 7. Troubleshooting
-  - L7295: H2 9. Troubleshooting
-- L7951: H1 Debug a stuck heartbeat
-  - L9046: H2 Jobs, webhooks, and logs
-  - L9280: H2 Troubleshooting
-  - L12540: H2 Common Errors
-- L13925: H1 Activity
-  - L15436: H2 Activity And Dashboard
-  - L16098: H2 `activity`
-    - L16100: H3 `paperclipai activity list`
-  - L16844: H2 8. Troubleshooting: why a skill isn't loading
-    - L18706: H3 `parseStdoutLine(line: string, ts: string): TranscriptEntry[]`
-    - L18719: H3 `createStdoutParser(): { parseLine(line, ts): TranscriptEntry[]; reset(): void }`
-  - L18751: H2 Transcript Entries
-  - L19768: H2 Troubleshooting
+  - L810: H2 Troubleshooting
+  - L1071: H2 Troubleshooting
+  - L1208: H2 Reading the run transcript
+  - L1412: H2 Recent Activity Feed
+  - L1831: H2 The Activity tab
+- L2747: H1 Activity Log
+  - L2776: H2 Reading the Activity Log
+  - L2799: H2 Using Activity to Debug
+  - L2839: H2 The Activity Log Is Permanent
+    - L3224: H3 Activity charts
+    - L4348: H3 Common errors
+  - L4624: H2 Health and troubleshooting
+    - L5205: H3 Tabs: Triggers, Runs, Activity
+  - L5687: H2 Runtime logs tab
+  - L5774: H2 Troubleshooting checklist
+  - L7201: H2 7. Troubleshooting
+  - L7553: H2 7. Troubleshooting
+  - L7911: H2 9. Troubleshooting
+- L8639: H1 Debug a stuck heartbeat
+  - L9287: H2 Troubleshooting
+    - L9640: H3 Censor username in logs
+    - L9896: H3 Reading an error row
+  - L10014: H2 Jobs, webhooks, and logs
+  - L10269: H2 Troubleshooting
+  - L10398: H2 Error Codes
+  - L13737: H2 Common Errors
+- L15107: H1 Activity
+  - L15187: H2 Create activity event
+  - L15386: H2 Activity record
+  - L16945: H2 Activity And Dashboard
+  - L17632: H2 `activity`
+    - L17634: H3 `paperclipai activity list`
+  - L18606: H2 8. Troubleshooting: why a skill isn't loading
+    - L20960: H3 `parseStdoutLine(line: string, ts: string): TranscriptEntry[]`
+    - L20974: H3 `createStdoutParser(): { parseLine(line, ts): TranscriptEntry[]; reset(): void }`
+  - L21014: H2 Transcript Entries
+  - L22589: H2 Troubleshooting
 
 ## adapters_runtime
 
-  - L198: H2 Heartbeat
-  - L219: H2 Adapter
-  - L3313: H2 Adapter sync preferences
-  - L3917: H2 Adapter comparison
-  - L3933: H2 Claude Local (`claude_local`)
-  - L3971: H2 Codex Local (`codex_local`)
-  - L3993: H2 OpenCode Local (`opencode_local`)
-  - L4001: H2 Other adapters you may see
-- L4094: H1 The Adapter Manager
-  - L4104: H2 Opening the Adapter Manager
-  - L4149: H2 Enabling and disabling an adapter
-  - L4210: H2 Per-adapter configuration
-- L4633: H1 Heartbeats & Routines
-  - L4653: H2 Why timer heartbeats are opt-in
-  - L4890: H2 Pause vs. heartbeat off — they are not the same
-    - L6730: H3 Path A — Claude Local
-    - L6888: H3 a. Run the runtime's "list" command in the same shell as the heartbeat
-  - L7331: H2 The adapter model in one paragraph
-  - L7347: H2 Option A — OpenClaw invite
-  - L7395: H2 Option B — HTTP webhook adapter
-  - L7463: H2 Option C — Custom script (no Paperclip adapter)
-    - L7482: H3 2. The smallest heartbeat loop
-  - L8101: H2 5. OpenClaw variant: the invite-prompt flow
-  - L8776: H2 Instance: Adapters
-  - L8832: H2 Instance: Scheduler Heartbeats
-  - L10816: H2 Invoke Heartbeat
-  - L10844: H2 Adapter Helpers
-  - L10961: H2 Claude Login
-  - L15448: H2 Heartbeat
-  - L15657: H2 `heartbeat`
-    - L15661: H3 `paperclipai heartbeat run`
-  - L16748: H2 5. Skill vs. plugin vs. adapter
-- L16910: H1 Adapters Overview
-  - L16915: H2 What An Adapter Does
-  - L16933: H2 Choose An Adapter
-  - L16959: H2 Built-In Adapters
-  - L16979: H2 External Adapters
-- L17020: H1 Claude Local
-- L17142: H1 Codex Local
-- L17473: H1 OpenCode Local
-- L17820: H1 OpenClaw Gateway
-- L18251: H1 External Adapters
-- L18439: H1 Creating an Adapter
-  - L18611: H2 Registering Built-In Adapters
-- L18637: H1 Adapter UI Parser Contract
-  - L19253: H2 LLM Adapter Support
+  - L238: H2 Heartbeat
+  - L264: H2 Adapter
+    - L1985: H3 Worked example: a single IC heartbeat
+    - L3155: H3 Adapter and configuration
+      - L3312: H4 Writing `HEARTBEAT.md`
+    - L3351: H3 Adapters without bundles
+  - L3803: H2 Adapter sync preferences
+  - L4297: H2 Adapter comparison
+  - L4315: H2 Claude Local (`claude_local`)
+  - L4358: H2 Codex Local (`codex_local`)
+  - L4379: H2 OpenCode Local (`opencode_local`)
+  - L4389: H2 Other adapters you may see
+- L4492: H1 The Adapter Manager
+  - L4504: H2 Opening the Adapter Manager
+  - L4547: H2 Enabling and disabling an adapter
+  - L4610: H2 Per-adapter configuration
+- L5048: H1 Heartbeats & Routines
+  - L5071: H2 Why timer heartbeats are opt-in
+  - L5309: H2 Pause vs. heartbeat off — they are not the same
+    - L7299: H3 Path A — Claude Local
+    - L7394: H3 Path A — Claude Local
+    - L7467: H3 a. Run the runtime's "list" command in the same shell as the heartbeat
+    - L7778: H3 Adapter sync mode matters
+  - L7960: H2 The adapter model in one paragraph
+  - L7978: H2 Option A — OpenClaw invite
+    - L8002: H3 2. Paste into OpenClaw
+  - L8025: H2 Option B — HTTP webhook adapter
+  - L8102: H2 Option C — Custom script (no Paperclip adapter)
+    - L8122: H3 2. The smallest heartbeat loop
+  - L8812: H2 5. OpenClaw variant: the invite-prompt flow
+  - L9715: H2 Instance: Adapters
+    - L9757: H3 Per-adapter config
+  - L9772: H2 Instance: Scheduler Heartbeats
+  - L11801: H2 Invoke Heartbeat
+  - L11835: H2 Adapter Helpers
+  - L11960: H2 Claude Login
+    - L12102: H3 Heartbeat Context
+- L16255: H1 Adapters
+- L16261: H1 Adapters API
+  - L16287: H2 Update an adapter's instance config
+  - L16295: H2 Override adapter behaviour
+  - L16311: H2 Reload an adapter
+  - L16327: H2 Read an adapter's config schema
+  - L16335: H2 Adapter UI parser bundle
+  - L16958: H2 Heartbeat
+  - L17186: H2 `heartbeat`
+    - L17190: H3 `paperclipai heartbeat run`
+  - L18505: H2 5. Skill vs. plugin vs. adapter
+- L18668: H1 Adapters Overview
+  - L18674: H2 What An Adapter Does
+  - L18688: H2 Choose An Adapter
+  - L18716: H2 Built-In Adapters
+  - L18738: H2 External Adapters
+- L18787: H1 Claude Local
+- L18793: H1 Claude Local
+- L18928: H1 Codex Local
+- L19464: H1 OpenCode Local
+- L19932: H1 OpenClaw Gateway
+- L20479: H1 External Adapters
+- L20676: H1 Creating an Adapter
+  - L20861: H2 Registering Built-In Adapters
+- L20893: H1 Adapter UI Parser Contract
+  - L21966: H2 LLM Adapter Support
 
 ## agents_org
 
-  - L140: H2 Company
-  - L154: H2 Agent
-  - L693: H2 Step 9 — Bootstrap the CEO account
-- L771: H1 Create Your First Company
-- L830: H1 Hire Your First Agent
-- L942: H1 Watching Agents Work
-  - L1154: H2 Agents Section
-  - L1217: H2 When to create issues yourself vs let the CEO handle it
-  - L1574: H2 Appendix — Issue workflow patterns (for agent developers)
-    - L1687: H3 Hire Agent
-  - L1739: H2 Hire Approval Detail
-    - L2230: H3 From the Agent Detail Page
-- L2548: H1 Agents
-  - L2556: H2 The Agent List
-  - L2612: H2 Hiring a New Agent
-  - L2666: H2 The Agent Detail Page
-  - L2733: H2 Instructions Tab
-  - L2854: H2 Skills Tab
-    - L3000: H3 Anatomy of an agent budget
-  - L3074: H2 How Agents Are Invoked — The Heartbeat Model
-- L3214: H1 Skills
-    - L3277: H3 4. Import from the skills.sh marketplace
-  - L3324: H2 Assigning a skill to an agent
-  - L3368: H2 Skills across agents
-  - L3379: H2 Working with skills programmatically
-- L3397: H1 Building Your Org Structure
-  - L3402: H2 Why org structure matters
-  - L3420: H2 Common org structures
-    - L3422: H3 Solo CEO (getting started)
-  - L3495: H2 Changing an agent's manager
-  - L3502: H2 Viewing the org chart
-  - L3509: H2 The org chart view
-  - L3539: H2 Reassigning an agent via the chart
-  - L3617: H2 What you do vs what the CEO handles
-  - L3649: H2 Approving hire requests
-    - L3695: H3 Hire-on-demand
-  - L3708: H2 Troubleshooting: CEO isn't delegating
-    - L3720: H3 CEO isn't assigning to reports
-    - L3728: H3 CEO is assigning everything to itself
-  - L3776: H2 What you do vs what the CEO handles
-  - L3808: H2 Approving hire requests
-    - L3854: H3 Hire-on-demand
-  - L3867: H2 Troubleshooting: CEO isn't delegating
-    - L3879: H3 CEO isn't assigning to reports
-    - L3887: H3 CEO is assigning everything to itself
-- L3909: H1 Agent Adapters
-  - L4640: H2 The two ways an agent starts running
-  - L4663: H2 Heartbeat settings on an agent
-  - L4924: H2 Appendix — The heartbeat protocol (for agent developers)
-  - L5729: H2 Exporting a company
-  - L5768: H2 Importing a company
-    - L5781: H3 Creating a new company from a package
-    - L5789: H3 Merging into an existing company
-  - L5960: H2 1. Set the company-wide cap
-- L6433: H1 Connect an agent to a GitHub repo and have it open PRs
-  - L6580: H2 4. The agent instructions: PR-driven work
-  - L6865: H2 4. Per-agent scoping rules
-  - L6884: H2 5. Debugging: which tools does the agent actually have?
-    - L6902: H3 b. Read the agent's run transcript
-- L6996: H1 Write a company skill and assign it to specific agents
-    - L7099: H3 From a GitHub repo or skills.sh
-  - L7136: H2 4. Assign the skill to specific agents
-  - L7183: H2 5. Reuse at hire time with `desiredSkills`
-- L7324: H1 Bring your own agent (OpenClaw, HTTP webhook, custom script)
-    - L7432: H3 2. Configure the agent
-    - L7468: H3 1. Mint an agent and an API key
-  - L7666: H2 Agent runner placement
-- L7707: H1 Back up and restore a company
-  - L7815: H2 3. Restore to a new company
-  - L7850: H2 4. Import into the same company
-  - L7956: H2 1. Agent wakes up, then exits immediately
-  - L7984: H2 4. Issue cancelled mid-run, agent keeps acting
-- L8022: H1 Handle board approvals for hires
-  - L8038: H2 2. CEO submits the proposal
-  - L8237: H2 What the notifier agent does
-- L8378: H1 Company Administration
-    - L8742: H3 Instance-level vs. company-level roles
-  - L9358: H2 Company Scoping
-  - L9616: H2 Agent authentication
-  - L9671: H2 Company scoping
-    - L9725: H3 Agent auth with an agent token
-  - L9785: H2 Company shape
-  - L9818: H2 Get a company
-  - L9827: H2 Create a company
-  - L9894: H2 Update a company
-  - L9998: H2 Upload a company logo
-  - L10065: H2 Company stats
-- L10140: H1 Agents
-  - L10174: H2 List Agents
-  - L10215: H2 Get Agent
-  - L10269: H2 Get Current Agent
-  - L10332: H2 Create Agent
-  - L10478: H2 Hire Agent
-  - L10492: H2 Update Agent
-  - L10689: H2 Wake an Agent
-  - L10829: H2 Org Chart
-  - L10859: H2 Skills
-  - L10943: H2 Instructions Bundle
-    - L13153: H3 Company summary
-    - L13240: H3 Set company budget
-    - L13245: H3 Set agent budget
-  - L13783: H2 Using Secrets In Agent Config
-  - L13934: H2 List company activity
-  - L15008: H2 Agent Access Rules
-  - L15333: H2 Company Commands
-  - L15389: H2 Agent Commands
-  - L15752: H2 `company`
-    - L15754: H3 `paperclipai company list`
-    - L15764: H3 `paperclipai company get <companyId>`
-    - L15776: H3 `paperclipai company export <companyId>`
-    - L15801: H3 `paperclipai company import <fromPathOrUrl>`
-    - L15830: H3 `paperclipai company delete <selector>`
-  - L15969: H2 `agent`
-    - L15971: H3 `paperclipai agent list`
-    - L15983: H3 `paperclipai agent get <agentId>`
-    - L15991: H3 `paperclipai agent local-cli <agentRef>`
-    - L16333: H3 `paperclipai auth bootstrap-ceo`
-    - L16462: H3 Run as a local agent (Claude or Codex)
-    - L16478: H3 Export and re-import a company
-- L16495: H1 Skills Reference
-    - L16569: H3 Example skills you can read
-  - L16659: H2 3. Assigning skills to agents
-    - L16663: H3 At hire time — `desiredSkills`
-  - L17086: H2 Skills Injection
-  - L17203: H2 Skills Injection
-  - L17217: H2 Instructions File
-  - L17326: H2 Skills Injection
-  - L17742: H2 Skills Integration
-  - L18588: H2 Skills Injection
-  - L19518: H2 Secret References In Agent Config
-  - L19622: H2 Agent Runtime
+  - L173: H2 Company
+  - L190: H2 Agent
+  - L773: H2 Step 9 — Bootstrap the CEO account
+- L866: H1 Create Your First Company
+- L948: H1 Hire Your First Agent
+- L1098: H1 Watching Agents Work
+  - L1378: H2 Agents Section
+  - L1465: H2 When to create issues yourself vs let the CEO handle it
+  - L1907: H2 Appendix — Issue workflow patterns (for agent developers)
+    - L2142: H3 Hire Agent
+    - L2155: H3 CEO Strategy
+  - L2196: H2 Hire Approval Detail
+    - L2213: H3 Reviewing a hire request
+    - L2421: H3 By agent
+    - L2515: H3 Setting a Company Budget
+    - L2531: H3 Setting Per-Agent Budgets
+    - L2555: H3 Increasing a Budget or Resuming a Paused Agent
+    - L2706: H3 From the Agent Detail Page
+- L3067: H1 Agents
+  - L3077: H2 The Agent List
+    - L3094: H3 Terminated agents
+    - L3098: H3 List view vs org chart view
+    - L3120: H3 Creating a new agent from the list
+  - L3128: H2 Hiring a New Agent
+    - L3169: H3 Company skills
+    - L3175: H3 Approvals when agents hire agents
+  - L3185: H2 The Agent Detail Page
+  - L3245: H2 Instructions Tab
+    - L3264: H3 Recommended bundle structure: AGENTS / SOUL / HEARTBEAT / TOOLS
+  - L3361: H2 Skills Tab
+    - L3383: H3 Where skills run
+    - L3496: H3 Anatomy of an agent budget
+    - L3525: H3 Agent-level vs company-level
+  - L3561: H2 How Agents Are Invoked — The Heartbeat Model
+    - L3578: H3 Agent identity
+    - L3608: H3 Agent status
+    - L3646: H3 Diagnose a misbehaving agent
+    - L3655: H3 Temporarily mute an agent
+    - L3671: H3 Raise a capped agent's budget
+- L3692: H1 Skills
+    - L3761: H3 4. Import from the skills.sh marketplace
+  - L3815: H2 Assigning a skill to an agent
+  - L3862: H2 Skills across agents
+  - L3874: H2 Working with skills programmatically
+- L3900: H1 Building Your Org Structure
+  - L3906: H2 Why org structure matters
+  - L3925: H2 Common org structures
+    - L3927: H3 Solo CEO (getting started)
+  - L4013: H2 Changing an agent's manager
+  - L4021: H2 Viewing the org chart
+  - L4029: H2 The org chart view
+  - L4057: H2 Reassigning an agent via the chart
+  - L4146: H2 What you do vs what the CEO handles
+  - L4180: H2 Approving hire requests
+    - L4225: H3 Hire-on-demand
+  - L4239: H2 Troubleshooting: CEO isn't delegating
+    - L4251: H3 CEO isn't assigning to reports
+    - L4259: H3 CEO is assigning everything to itself
+- L4287: H1 Agent Adapters
+    - L4773: H3 When agents create workspaces
+    - L4868: H3 Distinct from agent and company budgets
+  - L5056: H2 The two ways an agent starts running
+  - L5083: H2 Heartbeat settings on an agent
+  - L5347: H2 Appendix — The heartbeat protocol (for agent developers)
+  - L6190: H2 Exporting a company
+  - L6231: H2 Importing a company
+    - L6246: H3 Creating a new company from a package
+    - L6254: H3 Merging into an existing company
+  - L6451: H2 1. Set the company-wide cap
+- L6968: H1 Connect an agent to a GitHub repo and have it open PRs
+  - L7123: H2 4. The agent instructions: PR-driven work
+  - L7440: H2 4. Per-agent scoping rules
+  - L7463: H2 5. Debugging: which tools does the agent actually have?
+    - L7482: H3 b. Read the agent's run transcript
+- L7592: H1 Write a company skill and assign it to specific agents
+    - L7704: H3 From a GitHub repo or skills.sh
+  - L7745: H2 4. Assign the skill to specific agents
+  - L7792: H2 5. Reuse at hire time with `desiredSkills`
+- L7952: H1 Bring your own agent (OpenClaw, HTTP webhook, custom script)
+    - L8006: H3 3. Approve the hire
+    - L8069: H3 2. Configure the agent
+    - L8108: H3 1. Mint an agent and an API key
+  - L8329: H2 Agent runner placement
+- L8379: H1 Back up and restore a company
+  - L8492: H2 3. Restore to a new company
+  - L8528: H2 4. Import into the same company
+  - L8645: H2 1. Agent wakes up, then exits immediately
+  - L8679: H2 4. Issue cancelled mid-run, agent keeps acting
+- L8726: H1 Handle board approvals for hires
+  - L8744: H2 2. CEO submits the proposal
+  - L8964: H2 What the notifier agent does
+- L9315: H1 Company Administration
+    - L9364: H3 Company Packages shortcuts
+    - L9680: H3 Instance-level vs. company-level roles
+    - L9703: H3 Company access
+  - L10354: H2 Company Scoping
+  - L10621: H2 Agent authentication
+    - L10630: H3 Agent API keys
+    - L10641: H3 Local agent JWTs
+    - L10663: H3 Agent-only endpoints
+  - L10669: H2 Company scoping
+    - L10729: H3 Agent auth with an agent token
+  - L10799: H2 Company shape
+  - L10834: H2 Get a company
+  - L10844: H2 Create a company
+  - L10907: H2 Update a company
+  - L11007: H2 Upload a company logo
+  - L11068: H2 Company stats
+- L11154: H1 Agents
+  - L11190: H2 List Agents
+  - L11230: H2 Get Agent
+  - L11282: H2 Get Current Agent
+  - L11342: H2 Create Agent
+  - L11480: H2 Hire Agent
+  - L11497: H2 Update Agent
+  - L11690: H2 Wake an Agent
+  - L11817: H2 Org Chart
+  - L11853: H2 Skills
+  - L11939: H2 Instructions Bundle
+    - L14314: H3 Company summary
+    - L14390: H3 Set company budget
+    - L14396: H3 Set agent budget
+  - L14961: H2 Using Secrets In Agent Config
+  - L15117: H2 List company activity
+  - L16213: H2 Agent Access Rules
+  - L16483: H2 LLM agent-configuration reflection
+  - L16850: H2 Company Commands
+  - L16899: H2 Agent Commands
+  - L17281: H2 `company`
+    - L17283: H3 `paperclipai company list`
+    - L17293: H3 `paperclipai company get <companyId>`
+    - L17305: H3 `paperclipai company export <companyId>`
+    - L17331: H3 `paperclipai company import <fromPathOrUrl>`
+    - L17361: H3 `paperclipai company delete <selector>`
+  - L17501: H2 `agent`
+    - L17503: H3 `paperclipai agent list`
+    - L17515: H3 `paperclipai agent get <agentId>`
+    - L17523: H3 `paperclipai agent local-cli <agentRef>`
+    - L17871: H3 `paperclipai auth bootstrap-ceo`
+    - L18195: H3 Run as a local agent (Claude or Codex)
+    - L18211: H3 Export and re-import a company
+- L18233: H1 Skills Reference
+    - L18316: H3 Example skills you can read
+  - L18410: H2 3. Assigning skills to agents
+    - L18414: H3 At hire time — `desiredSkills`
+    - L18434: H3 After hire — `POST /api/agents/{agentId}/skills/sync`
+    - L18616: H3 "I assigned the skill but the agent doesn't see it"
+    - L18623: H3 "Invalid company skill selection (ambiguous/unknown references)"
+    - L18646: H3 "An agent gets a skill it never asked for"
+  - L18864: H2 Skills Injection
+  - L18987: H2 Skills Injection
+  - L19005: H2 Instructions File
+  - L19119: H2 Skills Injection
+  - L19738: H2 Skills Integration
+  - L19886: H2 Skills Injection
+  - L20834: H2 Skills Injection
+  - L21441: H2 Tools agents can call
+  - L22293: H2 Secret References In Agent Config
+  - L22433: H2 Agent Runtime
 
 ## api_cli
 
-- L65: H1 What is Paperclip?
-  - L121: H2 A note on what Paperclip is not
-  - L328: H2 Step 2 — Download Paperclip Desktop
-  - L348: H2 Step 4 — Open Paperclip
-  - L357: H2 Step 5 — Get your API key
-  - L460: H2 Step 4 — Open Paperclip
-  - L720: H2 Step 10 — Get your API key
-    - L2390: H3 API endpoints
-  - L4012: H2 HTTP Webhook (`http`)
-  - L4049: H2 Getting API keys
-  - L5611: H2 API usage
-  - L5917: H2 Step 3 — Open Paperclip
-  - L5984: H2 2. Tune thresholds with the policy API
-  - L6335: H2 Webhook and manual trigger variants
-    - L6339: H3 Webhook
-    - L6367: H3 Manual (`api`)
-  - L8175: H2 Slack webhook setup
-  - L8188: H2 Discord webhook setup
-- L9114: H1 CLI Auth & Board Claim
-  - L9133: H2 Claiming a board from the CLI
-  - L9161: H2 Device-code flow: `paperclipai auth login`
-- L9295: H1 API Overview
-    - L9687: H3 Board auth with a board API key
-  - L10625: H2 API Keys
-  - L13932: H2 Endpoints
-    - L14641: H3 Webhook
-- L15041: H1 CLI Overview
-  - L15147: H2 `paperclipai run`
-  - L15173: H2 `paperclipai onboard`
-  - L15201: H2 `paperclipai doctor`
-  - L15231: H2 `paperclipai configure`
-  - L15254: H2 `paperclipai env`
-  - L15265: H2 `paperclipai allowed-hostname`
-    - L15514: H3 `paperclipai onboard`
-    - L15536: H3 `paperclipai doctor`
-    - L15556: H3 `paperclipai env`
-    - L15573: H3 `paperclipai configure`
-    - L15592: H3 `paperclipai db:backup`
-    - L15614: H3 `paperclipai allowed-hostname <host>`
-    - L15634: H3 `paperclipai run`
-    - L15689: H3 `paperclipai context show`
-    - L15704: H3 `paperclipai context list`
-    - L15714: H3 `paperclipai context use <profile>`
-    - L15726: H3 `paperclipai context set`
-    - L16119: H3 `paperclipai dashboard get`
-    - L16137: H3 `paperclipai worktree init`
-    - L16159: H3 `paperclipai worktree env`
-    - L16172: H3 `paperclipai worktree:make <name>`
-    - L16197: H3 `paperclipai worktree:list`
-    - L16209: H3 `paperclipai worktree:merge-history [source]`
-    - L16230: H3 `paperclipai worktree:cleanup <name>`
-    - L16253: H3 `paperclipai plugin list`
-    - L16295: H3 `paperclipai plugin enable <pluginKey>`
-    - L16303: H3 `paperclipai plugin disable <pluginKey>`
-    - L16311: H3 `paperclipai plugin inspect <pluginKey>`
-    - L16319: H3 `paperclipai plugin examples`
-    - L16349: H3 `paperclipai auth login`
-    - L16362: H3 `paperclipai auth logout`
-    - L16370: H3 `paperclipai auth whoami`
-    - L16450: H3 Set up a CLI context profile
-    - L16588: H3 Endpoints
-    - L19643: H3 `PAPERCLIP_WAKE_REASON` values
+- L85: H1 What is Paperclip?
+  - L146: H2 A note on what Paperclip is not
+  - L383: H2 Step 2 — Download Paperclip Desktop
+  - L405: H2 Step 4 — Open Paperclip
+  - L415: H2 Step 5 — Get your API key
+  - L519: H2 Step 4 — Open Paperclip
+  - L804: H2 Step 10 — Get your API key
+    - L2906: H3 API endpoints
+      - L3341: H4 How Paperclip seeds these files
+    - L3421: H3 API Keys section
+    - L3663: H3 Rotate an API key
+  - L4401: H2 HTTP Webhook (`http`)
+  - L4447: H2 Getting API keys
+    - L5249: H3 Webhook triggers
+  - L6065: H2 API usage
+  - L6398: H2 Step 3 — Open Paperclip
+  - L6477: H2 2. Tune thresholds with the policy API
+  - L6859: H2 Webhook and manual trigger variants
+    - L6863: H3 Webhook
+    - L6892: H3 Manual (`api`)
+  - L8898: H2 Slack webhook setup
+  - L8912: H2 Discord webhook setup
+  - L9154: H2 1. Start Paperclip
+- L10094: H1 CLI Auth & Board Claim
+  - L10115: H2 Claiming a board from the CLI
+  - L10149: H2 Device-code flow: `paperclipai auth login`
+    - L10201: H3 Finishing on the CLI
+- L10289: H1 API Overview
+  - L10459: H2 A Good First API Call
+    - L10602: H3 Board API keys
+    - L10688: H3 Board auth with a board API key
+  - L11630: H2 API Keys
+  - L15115: H2 Endpoints
+    - L15828: H3 Webhook
+    - L15853: H3 API
+- L16354: H1 Plugins API
+  - L16395: H2 Jobs and webhooks
+- L16446: H1 Instance Admin API
+- L16543: H1 CLI Overview
+  - L16661: H2 `paperclipai run`
+  - L16686: H2 `paperclipai onboard`
+  - L16715: H2 `paperclipai doctor`
+  - L16740: H2 `paperclipai configure`
+  - L16764: H2 `paperclipai env`
+  - L16776: H2 `paperclipai allowed-hostname`
+    - L17042: H3 `paperclipai onboard`
+    - L17064: H3 `paperclipai doctor`
+    - L17084: H3 `paperclipai env`
+    - L17101: H3 `paperclipai configure`
+    - L17120: H3 `paperclipai db:backup`
+    - L17142: H3 `paperclipai allowed-hostname <host>`
+    - L17163: H3 `paperclipai run`
+    - L17218: H3 `paperclipai context show`
+    - L17233: H3 `paperclipai context list`
+    - L17243: H3 `paperclipai context use <profile>`
+    - L17255: H3 `paperclipai context set`
+    - L17653: H3 `paperclipai dashboard get`
+    - L17671: H3 `paperclipai worktree init`
+    - L17693: H3 `paperclipai worktree env`
+    - L17706: H3 `paperclipai worktree:make <name>`
+    - L17732: H3 `paperclipai worktree:list`
+    - L17744: H3 `paperclipai worktree:merge-history [source]`
+    - L17766: H3 `paperclipai worktree:cleanup <name>`
+    - L17790: H3 `paperclipai plugin list`
+    - L17833: H3 `paperclipai plugin enable <pluginKey>`
+    - L17841: H3 `paperclipai plugin disable <pluginKey>`
+    - L17849: H3 `paperclipai plugin inspect <pluginKey>`
+    - L17857: H3 `paperclipai plugin examples`
+    - L17887: H3 `paperclipai auth login`
+    - L17900: H3 `paperclipai auth logout`
+    - L17908: H3 `paperclipai auth whoami`
+    - L17922: H3 `paperclipai feedback report`
+    - L17943: H3 `paperclipai feedback export`
+    - L17959: H3 `paperclipai secrets list`
+    - L17967: H3 `paperclipai secrets declarations`
+    - L17980: H3 `paperclipai secrets create`
+    - L17996: H3 `paperclipai secrets link`
+    - L18010: H3 `paperclipai secrets doctor`
+    - L18026: H3 `paperclipai secrets migrate-inline-env`
+    - L18044: H3 `paperclipai env-lab up`
+    - L18057: H3 `paperclipai env-lab status`
+    - L18067: H3 `paperclipai env-lab down`
+    - L18077: H3 `paperclipai env-lab doctor`
+    - L18093: H3 `paperclipai routines disable-all`
+    - L18183: H3 Set up a CLI context profile
+    - L18342: H3 Endpoints
+  - L21137: H2 Public API
+    - L21225: H3 Host client factory
+    - L22456: H3 `PAPERCLIP_WAKE_REASON` values
 
 ## approvals_governance
 
-  - L272: H2 Approval
-- L1675: H1 Approvals
-  - L1683: H2 Types of Approvals
-  - L1716: H2 Opening the Approvals Page
-  - L1783: H2 Strategy Approval Detail
-  - L1816: H2 Approve, Reject, or Request Revision
-  - L1874: H2 Board Override Powers
-  - L3631: H2 Approving the strategy
-    - L3732: H3 Strategy was approved but nothing happened
-  - L3790: H2 Approving the strategy
-    - L3891: H3 Strategy was approved but nothing happened
-    - L4939: H3 2. Approval follow-up
-  - L5446: H2 Happy path: review → approval
-    - L5644: H3 Advancing a stage (approval)
-  - L8089: H2 4. What happens after approval
-- L8137: H1 Wire Slack/Discord notifications for approvals
-  - L11837: H2 Linked Approvals
-    - L11841: H3 List Linked Approvals
-    - L11849: H3 Link An Approval
-- L12100: H1 Approvals
-  - L12107: H2 Approval Types
-  - L12119: H2 List Approvals
-  - L12133: H2 Get Approval
-  - L12154: H2 Create Approval
-  - L15415: H2 Approval Commands
-  - L16016: H2 `approval`
-    - L16018: H3 `paperclipai approval list`
-    - L16029: H3 `paperclipai approval get <approvalId>`
-    - L16035: H3 `paperclipai approval create`
-    - L16049: H3 `paperclipai approval approve <approvalId>`
-    - L16060: H3 `paperclipai approval reject <approvalId>`
-    - L16068: H3 `paperclipai approval request-revision <approvalId>`
-    - L16076: H3 `paperclipai approval resubmit <approvalId>`
-  - L17906: H2 Session Strategy
+  - L319: H2 Approval
+- L2128: H1 Approvals
+  - L2138: H2 Types of Approvals
+  - L2169: H2 Opening the Approvals Page
+  - L2239: H2 Strategy Approval Detail
+    - L2249: H3 Reviewing a strategy approval
+  - L2277: H2 Approve, Reject, or Request Revision
+  - L2327: H2 Board Override Powers
+  - L4161: H2 Approving the strategy
+    - L4263: H3 Strategy was approved but nothing happened
+    - L5363: H3 2. Approval follow-up
+  - L5897: H2 Happy path: review → approval
+    - L6098: H3 Advancing a stage (approval)
+  - L8799: H2 4. What happens after approval
+- L8856: H1 Wire Slack/Discord notifications for approvals
+    - L9553: H3 Collision strategy
+  - L12840: H2 Linked Approvals
+    - L12844: H3 List Linked Approvals
+    - L12852: H3 Link An Approval
+    - L12869: H3 Unlink An Approval
+- L13265: H1 Approvals
+  - L13273: H2 Approval Types
+  - L13286: H2 List Approvals
+  - L13302: H2 Get Approval
+  - L13325: H2 Create Approval
+  - L16924: H2 Approval Commands
+  - L17550: H2 `approval`
+    - L17552: H3 `paperclipai approval list`
+    - L17563: H3 `paperclipai approval get <approvalId>`
+    - L17569: H3 `paperclipai approval create`
+    - L17583: H3 `paperclipai approval approve <approvalId>`
+    - L17594: H3 `paperclipai approval reject <approvalId>`
+    - L17602: H3 `paperclipai approval request-revision <approvalId>`
+    - L17610: H3 `paperclipai approval resubmit <approvalId>`
+  - L20016: H2 Session Strategy
 
 ## costs_budgets
 
-  - L247: H2 Budget
-- L1896: H1 Costs
-  - L1904: H2 How Costs Work
-  - L1985: H2 Budgets Tab
-    - L1990: H3 Budget Levels
-    - L1998: H3 Budget control plane
-  - L2112: H2 Providers Tab
-    - L2117: H3 Provider sub-tabs
-    - L2121: H3 Provider card
-  - L2150: H2 Billers Tab
-    - L2155: H3 Biller sub-tabs
-    - L2159: H3 Biller spend card
-  - L2181: H2 Finance Tab
-    - L2186: H3 Finance summary card
-  - L2222: H2 Monitoring Spending
-    - L2236: H3 From the Costs page
-  - L2241: H2 Cost-Saving Tips
-  - L2995: H2 Budget Tab
-  - L3249: H2 Why this matters for performance and cost
-  - L4433: H2 Budget Tab
-- L5953: H1 Set a monthly budget and enforce it
-  - L6033: H2 4. Attribute spend with billing codes
-  - L7686: H2 Cost (April 2026)
-- L13003: H1 Costs
-    - L13017: H3 Cost events
-  - L13151: H2 Reading Spend
-  - L13238: H2 Budget Controls
-    - L13294: H3 Budget overview
-  - L13353: H2 Finance Events
-    - L13357: H3 Create finance event
-    - L13362: H3 Read finance data
-  - L13408: H2 Secret Providers
-  - L19444: H2 Default Provider
-  - L19669: H2 LLM Provider Keys
+  - L295: H2 Budget
+    - L2163: H3 Budget Override
+- L2353: H1 Costs
+  - L2363: H2 How Costs Work
+    - L2412: H3 Finance ledger card
+    - L2436: H3 Finance timeline
+    - L2440: H3 Active budget incidents (overview)
+  - L2446: H2 Budgets Tab
+    - L2452: H3 Budget Levels
+    - L2464: H3 Budget control plane
+    - L2503: H3 Budget policies by scope
+    - L2573: H3 Viewing Budget Status at Different Thresholds
+  - L2591: H2 Providers Tab
+    - L2597: H3 Provider sub-tabs
+    - L2601: H3 Provider card
+    - L2620: H3 Provider window spend
+  - L2626: H2 Billers Tab
+    - L2632: H3 Biller sub-tabs
+    - L2636: H3 Biller spend card
+  - L2655: H2 Finance Tab
+    - L2661: H3 Finance summary card
+    - L2670: H3 By biller
+    - L2676: H3 Finance timeline
+    - L2690: H3 Exporting finance data
+  - L2696: H2 Monitoring Spending
+    - L2714: H3 From the Costs page
+  - L2720: H2 Cost-Saving Tips
+    - L3239: H3 Costs
+  - L3490: H2 Budget Tab
+    - L3515: H3 Editing the budget
+  - L3731: H2 Why this matters for performance and cost
+    - L4830: H3 Pause by budget hard stop
+  - L4836: H2 Budget Tab
+    - L4847: H3 Reading the budget card
+- L6443: H1 Set a monthly budget and enforce it
+  - L6532: H2 4. Attribute spend with billing codes
+  - L8351: H2 Cost (April 2026)
+- L14183: H1 Costs
+    - L14198: H3 Cost events
+  - L14312: H2 Reading Spend
+    - L14380: H3 Fast moving spend
+  - L14388: H2 Budget Controls
+    - L14441: H3 Budget overview
+    - L14468: H3 Budget incidents
+  - L14491: H2 Finance Events
+    - L14495: H3 Create finance event
+    - L14501: H3 Read finance data
+  - L14558: H2 Secret Providers
+    - L18018: H3 `paperclipai secrets providers`
+- L20378: H1 Sandbox Providers
+- L20384: H1 Sandbox Providers
+  - L20394: H2 Cloudflare (`provider: "cloudflare"`)
+  - L20425: H2 Daytona (`provider: "daytona"`)
+  - L20437: H2 exe.dev (`provider: "exe-dev"`)
+  - L20451: H2 E2B (`provider: "e2b"`)
+  - L20459: H2 Fake Sandbox (`provider: "fake-plugin"`)
+  - L22193: H2 Default Provider
+  - L22484: H2 LLM Provider Keys
 
 ## data_export
 
-  - L2437: H2 Exporting your data
-    - L2466: H3 Reading an exported trace
-  - L2517: H2 Data lifecycle
-  - L2529: H2 Remote sync
-- L5700: H1 Export & Import
-    - L5755: H3 Export options
-  - L7745: H2 1. Preview an export
-  - L7781: H2 2. Build the export (with `selectedFiles`)
-  - L7896: H2 6. Nightly export routine
-  - L8566: H2 Export
-  - L10082: H2 Feedback traces
-  - L10103: H2 Export and import
-  - L18702: H2 Export Shapes
+  - L2950: H2 Exporting your data
+    - L2979: H3 Reading an exported trace
+  - L3033: H2 Data lifecycle
+  - L3046: H2 Remote sync
+- L6159: H1 Export & Import
+    - L6218: H3 Export options
+  - L8421: H2 1. Preview an export
+  - L8457: H2 2. Build the export (with `selectedFiles`)
+  - L8577: H2 6. Nightly export routine
+  - L9500: H2 Export
+    - L9516: H3 Selecting what to export
+  - L11086: H2 Feedback traces
+  - L11108: H2 Export and import
+  - L20956: H2 Export Shapes
+    - L21256: H3 Re-exports
+  - L22418: H2 Telemetry & Feedback Export
 
 ## general
 
-- L1: H1 Quickstart Path
-  - L8: H2 What this is, briefly
-  - L30: H2 The 5-minute path
-  - L42: H2 What you'll see at the end of the path
-  - L55: H2 Where to go next
-  - L70: H2 The idea
-  - L79: H2 What you can do with it
-  - L87: H2 What it looks like
-  - L95: H2 Who is it for?
-  - L102: H2 What you need to get started
-- L133: H1 Key Concepts
-  - L316: H2 Step 1 — Check which Mac you have
-  - L405: H2 Step 6 — Choose Local or Remote mode
-  - L443: H2 Step 3 — Run the onboarding command
-  - L545: H2 Step 4 — Create a dedicated service user
-  - L741: H2 Common variations
-  - L766: H2 You're in
-  - L779: H2 Before you start
-  - L820: H2 A note on multiple companies
-  - L838: H2 Before you start
-  - L949: H2 What's about to happen
-  - L1034: H2 What to watch for
-- L1053: H1 Glossary
-  - L1060: H2 A
-  - L1069: H2 B
-  - L1076: H2 C
-  - L1086: H2 D
-  - L1091: H2 E
-  - L1096: H2 G
-  - L1101: H2 H
-  - L1108: H2 I
-  - L1113: H2 O
-  - L1118: H2 P
-  - L1125: H2 R
-  - L1132: H2 S
-  - L1139: H2 T
-- L1146: H1 The Dashboard
-  - L1171: H2 Overview Cards
-  - L1191: H2 Reading the Dashboard at a Glance
-  - L1305: H2 Tracking Progress
-    - L1371: H3 Tabs
-    - L1383: H3 Archive
-    - L1387: H3 Mark all as read
-    - L1391: H3 Search, filter, group, columns
-  - L1503: H2 The Chat tab
-  - L1561: H2 A quick mental model
-  - L1725: H2 Queue Filters
-  - L1832: H2 What Happens After You Decide
-  - L1914: H2 Page Header and Date Range
-  - L1929: H2 Overview Tab
-    - L1934: H3 Inference ledger card
-    - L2224: H3 From the Dashboard
-  - L2264: H2 What Gets Logged
-  - L2292: H2 Filtering
-- L2343: H1 Feedback & Voting
-  - L2350: H2 How voting works
-  - L2370: H2 Viewing your votes
-      - L2423: H4 Filters
-  - L2507: H2 Sharing preferences
-    - L2561: H3 Filter tabs
-  - L2690: H2 Dashboard Tab
-    - L2695: H3 Latest run card
-    - L2738: H3 Managed vs external bundles
-    - L2859: H3 Sections on the tab
-  - L2894: H2 Configuration Tab
-    - L2899: H3 The shared configuration form
-  - L2932: H2 Runs Tab
-    - L2937: H3 The run list
-  - L3044: H2 Keys
-    - L3049: H3 Issuing a key
-    - L3147: H3 Try a new instruction quickly
-  - L3207: H2 Related guides
-    - L3269: H3 2. Import from a gist
-    - L3273: H3 3. Import from a local file or folder
-  - L3294: H2 File inventory
-  - L3346: H2 Trust level
-  - L3392: H2 You're set
-  - L3409: H2 How it works
-    - L3432: H3 Small team
-    - L3444: H3 Scaled team
-  - L3463: H2 Adding a manager
-  - L3482: H2 Adding workers
-  - L3570: H2 How delegation flows once the team is in place
-  - L3584: H2 You're set
-- L3589: H1 Delegation
-  - L3594: H2 How automatic delegation works
-  - L3665: H2 Common delegation patterns
-    - L3667: H3 Small team: direct delegation
-    - L3680: H3 Larger team: cascading delegation
-  - L3745: H2 You're set
-  - L3753: H2 How automatic delegation works
-  - L3824: H2 Common delegation patterns
-    - L3826: H3 Small team: direct delegation
-    - L3839: H3 Larger team: cascading delegation
-  - L3904: H2 You're set
-    - L3938: H3 Prerequisites
-    - L3975: H3 Prerequisites
-    - L4018: H3 Configuration fields
-  - L4032: H2 Shell Process (`process`)
-    - L4038: H3 Configuration fields
-  - L4089: H2 You're set
-  - L4112: H2 The two lists
-    - L4166: H3 From npm
-  - L4235: H2 Where to go next
-- L4242: H1 Projects
-  - L4250: H2 Project List
-    - L4255: H3 Row anatomy
-  - L4278: H2 Overview Tab
-    - L4283: H3 What you see
-    - L4314: H3 What is shown
-  - L4367: H2 Configuration Tab
-    - L4372: H3 Basic properties
-  - L4492: H2 Where to go next
-- L4499: H1 Goals
-  - L4512: H2 Goals List
-    - L4517: H3 Tree view
-  - L4539: H2 Goal Detail
-    - L4544: H3 Header and body
-    - L4583: H3 Linking a project to a goal
-  - L4603: H2 Goal Hierarchy
-    - L4607: H3 When to use sub-goals
-    - L4612: H3 Creating a sub-goal
-    - L4617: H3 Reparenting and flattening
-    - L4622: H3 Status propagation
-  - L4627: H2 Where to go next
-  - L4677: H2 Routines — scheduled work the right way
-  - L4708: H2 The Routines list
-    - L4713: H3 List columns and badges
-  - L4770: H2 The routine detail page
-    - L4775: H3 Header
-  - L4806: H2 Cron picker
-  - L4844: H2 Variable templates
-    - L4848: H3 Defining variables
-  - L4869: H2 Catch-up behaviour
-  - L4880: H2 When a timer IS the right answer
-  - L4905: H2 A healthy setup looks like this
-  - L4917: H2 You're set
-    - L4929: H3 1. Identity
-    - L4950: H3 3. Get assignments
-    - L4958: H3 4. Pick work
-  - L5071: H2 Runtime services
-  - L5113: H2 When you'll encounter this
-  - L5146: H2 Configuration tab
-  - L5325: H2 Archiving and cleanup
-  - L5381: H2 Observability at a glance
-  - L5422: H2 You're set
-  - L5435: H2 The three layers
-  - L5471: H2 Changes-requested loop
-  - L5491: H2 Policy variants
-  - L5542: H2 Data model
-  - L5603: H2 Access control
-    - L5658: H3 Requesting changes
-  - L5673: H2 UI
-  - L5692: H2 Design principles
-  - L5707: H2 What a package contains
-    - L5733: H3 In the UI
-    - L5738: H3 In the terminal
-    - L5800: H3 Preview before applying
-    - L5810: H3 Handling name conflicts
-  - L5823: H2 Common use cases
-  - L5853: H2 After importing
-  - L5865: H2 You're set
-- L5870: H1 Terminal Setup
-  - L5877: H2 Prerequisites
-  - L5899: H2 Step 2 — Run the onboarding command
-  - L5944: H2 Advanced configuration
-  - L5949: H2 You're set
-  - L6018: H2 3. Where the warnings show up
-  - L6060: H2 5. What 100% actually does
-  - L6090: H2 6. Verify it works: force a spike
-  - L6140: H2 See also
-- L6148: H1 Create a routine that runs daily
-  - L6156: H2 What you'll need
-  - L6166: H2 1. Create the routine
-  - L6188: H2 2. Attach a daily schedule trigger
-  - L6216: H2 3. Pick a concurrency and catch-up policy
-  - L6234: H2 Pattern 1 — Daily standup
-  - L6395: H2 Verify it fired
-  - L6425: H2 See also
-  - L6440: H2 Architecture
-  - L6459: H2 1. Prereqs
-  - L6664: H2 See also
-  - L6691: H2 Architecture
-  - L6716: H2 1. Prereqs
-    - L6776: H3 Path B — Hermes Local
-    - L6923: H3 Setup
-    - L6941: H3 Verify
-  - L6986: H2 See also
-  - L7003: H2 Architecture
-  - L7022: H2 1. Prereqs
-    - L7082: H3 From a local path
-  - L7244: H2 7. Versioning and updates
-  - L7285: H2 8. Scoping rules to keep in mind
-  - L7315: H2 See also
-  - L7336: H2 Pick a path
-    - L7351: H3 1. Generate the invite prompt
-    - L7399: H3 1. Stand up a receiver
-    - L7456: H3 3. Smoke test
-    - L7543: H3 3. What you give up
-  - L7552: H2 Tradeoffs at a glance
-  - L7571: H2 See also
-  - L7585: H2 Architecture
-  - L7605: H2 Prerequisites
-  - L7614: H2 Fly.io (primary path)
-  - L7640: H2 VPS (secondary path)
-  - L7661: H2 DB migrations
-  - L7673: H2 Observability
-  - L7681: H2 Backups
-  - L7700: H2 See also
-  - L7714: H2 What a package contains
-  - L7888: H2 5. Why `replace` is rejected on safe routes
-  - L7932: H2 7. Round-trip verification
-  - L7943: H2 See also
-  - L7972: H2 3. Run dies with exit code 143
-  - L8000: H2 Where to look first
-  - L8008: H2 When to ask a human
-  - L8016: H2 See also
-  - L8029: H2 1. Turn the policy on
-  - L8062: H2 3. Review in the board UI
-  - L8113: H2 6. Denial path: what the requester sees
-  - L8128: H2 See also
-  - L8144: H2 Architecture
-  - L8163: H2 What's worth piping
-  - L8200: H2 The notifier routine
-  - L8256: H2 Message format
-    - L8260: H3 Slack (Block Kit)
-    - L8300: H3 Discord (embeds)
-  - L8336: H2 Testing the loop
-  - L8362: H2 Common failure modes
-  - L8371: H2 See also
-  - L8385: H2 General Settings
-    - L8390: H3 Name and description
-  - L8434: H2 Access & Members
-    - L8439: H3 Roles
-  - L8490: H2 Invites
-    - L8495: H3 Creating an invite
-  - L8533: H2 Join Requests
-    - L8538: H3 Filters
-    - L8571: H3 What gets included
-  - L8601: H2 Import
-    - L8606: H3 Choosing a source
-- L8652: H1 Settings
-  - L8661: H2 Profile
-  - L8678: H2 Instance: General
-  - L8737: H2 Instance: Access
-    - L8837: H3 What the scheduler does
-    - L8842: H3 What this page shows
-  - L8886: H2 Instance: Experimental
-    - L8891: H3 What "experimental" means here
-  - L8911: H2 Where to go next
-  - L8979: H2 Enabling and disabling
-  - L9004: H2 Upgrades
-    - L9041: H3 Permissions sidebar
-  - L9091: H2 You're set
-  - L9098: H2 Quick reference
-  - L9125: H2 When you need each flow
-    - L9165: H3 Starting the login
-    - L9235: H3 Using it
-    - L9258: H3 Rotating and revoking
-  - L9290: H2 Where to go next
-  - L9300: H2 Base URL
-  - L9509: H2 Reading This Reference
-  - L9685: H2 Examples
-  - L9771: H2 Update note
-- L9778: H1 Companies
-  - L9808: H2 List companies
-  - L9976: H2 Update branding
-  - L10123: H2 Archive or delete
-  - L10133: H2 Practical notes
-  - L10145: H2 Quick Rules
-  - L10156: H2 Common Fields
-  - L10589: H2 Update Permissions
-  - L10603: H2 Pause, Resume, Terminate, Delete
-    - L10866: H3 Sync request
-  - L10922: H2 Configuration
-  - L10968: H2 Common Edge Cases
-  - L10979: H2 Notes
-  - L10993: H2 Overview
-    - L11017: H3 Query Parameters
-  - L11588: H2 Documents
-  - L11733: H2 Attachments
-    - L11737: H3 List Attachments
-    - L11745: H3 Upload Attachment
-  - L11928: H2 Interactions
-    - L11933: H3 List Interactions
-    - L11941: H3 Create Interaction
-    - L11986: H3 Status values
-    - L11998: H3 State machine
-    - L12056: H3 Allowed transitions
-    - L12069: H3 Automatic side effects
-    - L12089: H3 Common mistakes
-    - L12171: H3 Payload shape per type
-  - L12287: H2 Review A Decision
-  - L12382: H2 Resubmit
-  - L12522: H2 Lifecycle
-- L12548: H1 Goals and Projects
-  - L12553: H2 At a Glance
-  - L12564: H2 Goals
-  - L12699: H2 Projects
-  - L12994: H2 Practical Model
-  - L13376: H2 Internal Diagnostics
-  - L13383: H2 Practical Reading Order
-  - L13465: H2 What Is Stored
-  - L13915: H2 Practical Notes
-- L14219: H1 Dashboard
-  - L14224: H2 Get Dashboard
-    - L14232: H3 What the buckets mean
-- L14354: H1 Routines
-  - L14361: H2 What A Routine Controls
-  - L14387: H2 List Routines
-  - L14443: H2 Get Routine
-  - L14461: H2 Create Routine
-  - L14596: H2 Update Routine
-  - L14617: H2 Trigger Types
-    - L14621: H3 Schedule
-  - L14678: H2 Add Trigger
-  - L14749: H2 Update Trigger
-  - L14766: H2 Delete Trigger
-  - L14792: H2 Manual Run
-  - L14884: H2 Fire Public Trigger
-  - L14972: H2 List Runs
-  - L14993: H2 Routine Run Statuses
-  - L15027: H2 Practical Notes
-  - L15053: H2 Command Families
-  - L15065: H2 Common Options
-  - L15088: H2 Context Profiles
-  - L15118: H2 Next Steps
-- L15125: H1 Setup Commands
-  - L15135: H2 When To Use
-  - L15280: H2 Local Paths
-  - L15298: H2 Next Step
-- L15303: H1 Control-Plane Commands
-  - L15317: H2 Working Pattern
-  - L15459: H2 Next Steps
-- L15465: H1 Command Reference
-  - L15473: H2 Synopsis
-  - L15488: H2 Common Options
-  - L15510: H2 Setup commands
-  - L15685: H2 `context`
-  - L16117: H2 `dashboard`
-  - L16380: H2 Environment Variables
-    - L16384: H3 Local instance and config
-  - L16428: H2 Exit Codes
-  - L16439: H2 Examples
-  - L16487: H2 Related
-    - L16534: H3 Frontmatter fields
-    - L16554: H3 Body
-    - L16558: H3 Supporting files
-    - L16604: H3 Import: accepted sources
-  - L16728: H2 4. Scoping rules
-  - L16764: H2 6. Naming collisions and resolution
-    - L16766: H3 Canonical key
-    - L16778: H3 Reference resolution
-  - L16811: H2 7. Versioning semantics
-    - L16824: H3 `update-status` response
-  - L16903: H2 See also
-  - L16991: H2 Common Concepts
-  - L17006: H2 Next Steps
-  - L17025: H2 When To Use
-  - L17045: H2 Common Fields
-  - L17068: H2 Session Persistence
-  - L17098: H2 Environment Test
-  - L17110: H2 Example
-  - L17136: H2 Next Steps
-  - L17147: H2 When To Use
-  - L17167: H2 Common Fields
-  - L17190: H2 Session Persistence
-  - L17226: H2 Environment Test
-  - L17238: H2 Example
-  - L17265: H2 Next Steps
-- L17271: H1 Gemini Local
-  - L17276: H2 When To Use
-  - L17296: H2 Common Fields
-  - L17318: H2 Session Persistence
-  - L17333: H2 Environment Test
-  - L17345: H2 Example
-  - L17373: H2 Next Steps
-- L17379: H1 Cursor Local
-  - L17384: H2 When To Use
-  - L17402: H2 Common Fields
-  - L17419: H2 Session Persistence
-  - L17432: H2 Models
-  - L17451: H2 Example
-  - L17468: H2 Next Steps
-  - L17478: H2 When To Use
-  - L17496: H2 Common Fields
-  - L17516: H2 Session Persistence
-  - L17530: H2 Models
-  - L17545: H2 Example
-  - L17571: H2 Next Steps
-- L17576: H1 Pi Local
-  - L17581: H2 When To Use
-  - L17601: H2 Common Fields
-  - L17619: H2 Session Persistence
-  - L17632: H2 Example
-  - L17657: H2 Next Steps
-- L17662: H1 Hermes Local
-  - L17667: H2 When To Use
-  - L17687: H2 Common Fields
-    - L17689: H3 Core
-    - L17698: H3 Tools
-    - L17712: H3 Advanced
-  - L17726: H2 Auto Model Detection
-  - L17731: H2 Session Persistence
-  - L17752: H2 Prompt Template Variables
-  - L17790: H2 Example
-  - L17815: H2 Next Steps
-  - L17828: H2 When To Use
-  - L17844: H2 Transport
-  - L17856: H2 Common Fields
-  - L17917: H2 Payload Mapping
-  - L17931: H2 Timeouts
-  - L17939: H2 Log Format
-    - L17953: H3 Automated join smoke test
-    - L17961: H3 One-command gateway UI
-    - L17980: H3 Network tips
-  - L17991: H2 Onboarding Checklist
-  - L18007: H2 Example
-  - L18032: H2 Next Steps
-- L18037: H1 Process
-  - L18045: H2 When To Use
-  - L18063: H2 Common Fields
-  - L18078: H2 How It Works
-  - L18089: H2 Environment Test
-  - L18100: H2 Example
-  - L18124: H2 Practical Notes
-  - L18132: H2 Next Steps
-- L18137: H1 HTTP
-  - L18145: H2 When To Use
-  - L18163: H2 Common Fields
-  - L18177: H2 Request Body
-  - L18206: H2 Environment Test
-  - L18217: H2 Example
-  - L18238: H2 Practical Notes
-  - L18246: H2 Next Steps
-  - L18256: H2 When To Use
-  - L18274: H2 Built-In Vs External
-  - L18288: H2 Package Shape
-  - L18381: H2 UI Parser Contract
-  - L18391: H2 Runtime Lifecycle
-  - L18423: H2 Practical Notes
-  - L18432: H2 Next Steps
-  - L18447: H2 Built-In Vs External
-  - L18459: H2 Recommended Package Layout
-  - L18481: H2 Root Metadata
-  - L18525: H2 Execute
-  - L18554: H2 Environment Test
-  - L18567: H2 Session Persistence
-  - L18601: H2 UI Parser
-  - L18631: H2 Next Steps
-  - L18648: H2 What It Solves
-  - L18663: H2 How It Loads
-  - L18681: H2 Package Contract
-  - L18772: H2 Constraints
-  - L18783: H2 Testing
-  - L18804: H2 When To Skip It
-  - L18815: H2 Next Steps
-  - L18835: H2 Quick Comparison
-    - L18837: H3 Local Trusted
-  - L18869: H2 Choosing A Mode
-  - L18890: H2 Start Here
-  - L18917: H2 Mode Summary
-  - L18929: H2 `local_trusted`
-  - L19001: H2 Migrating Modes
-  - L19020: H2 Changing The Mode
-- L19038: H1 Local Development
-  - L19045: H2 Prerequisites
-  - L19069: H2 One-Command Bootstrap
-  - L19086: H2 Managed Dev Runner
-  - L19098: H2 Private Network Dev
-  - L19122: H2 Health Checks
-  - L19144: H2 Reset Local Data
-  - L19171: H2 Default Data Paths
-  - L19195: H2 Compose Quickstart
-  - L19224: H2 Manual Image Build
-  - L19241: H2 What Persists
-  - L19481: H2 Environment Overrides
-  - L19497: H2 Strict Mode
-- L19541: H1 Environment Variables
-  - L19599: H2 Storage
-  - L19613: H2 Scheduler
-- L19682: H1 Tailscale Private Access
-  - L19689: H2 Start In Private Mode
-  - L19714: H2 Find The Reachable Address
-  - L19725: H2 Open The Instance
-  - L19741: H2 Allow Custom Hostnames
-  - L19752: H2 Verify Connectivity
+- L10: H1 Quickstart Path
+  - L18: H2 What this is, briefly
+  - L40: H2 The 5-minute path
+  - L54: H2 What you'll see at the end of the path
+  - L68: H2 Where to go next
+  - L91: H2 The idea
+  - L103: H2 What you can do with it
+  - L113: H2 What it looks like
+  - L123: H2 Who is it for?
+  - L131: H2 What you need to get started
+- L165: H1 Key Concepts
+  - L371: H2 Step 1 — Check which Mac you have
+  - L457: H2 Step 6 — Choose Local or Remote mode
+  - L500: H2 Step 3 — Run the onboarding command
+  - L609: H2 Step 4 — Create a dedicated service user
+  - L829: H2 Common variations
+  - L855: H2 You're in
+  - L876: H2 Before you start
+  - L931: H2 A note on multiple companies
+  - L958: H2 Before you start
+  - L1106: H2 What's about to happen
+  - L1218: H2 What to watch for
+- L1251: H1 Glossary
+  - L1259: H2 A
+  - L1271: H2 B
+  - L1279: H2 C
+  - L1293: H2 D
+  - L1299: H2 E
+  - L1305: H2 G
+  - L1311: H2 H
+  - L1319: H2 I
+  - L1325: H2 O
+  - L1331: H2 P
+  - L1339: H2 R
+  - L1347: H2 S
+  - L1355: H2 T
+- L1368: H1 The Dashboard
+  - L1399: H2 Overview Cards
+  - L1422: H2 Reading the Dashboard at a Glance
+  - L1568: H2 Tracking Progress
+    - L1653: H3 Tabs
+    - L1672: H3 Archive
+    - L1676: H3 Mark all as read
+    - L1680: H3 Search, filter, group, columns
+    - L1690: H3 Board view for high-volume columns
+    - L1700: H3 Unread states and the archive slot
+    - L1771: H3 Keyed documents
+      - L1782: H4 Locking a document
+  - L1794: H2 The Chat tab
+    - L1807: H3 Composer
+    - L1820: H3 Run-id binding
+  - L1847: H2 Recovery actions
+    - L1861: H3 Resolution outcomes
+  - L1892: H2 A quick mental model
+    - L1928: H3 Work-and-update pattern
+    - L1946: H3 Blocked pattern
+    - L1957: H3 Delegation pattern
+    - L1975: H3 Release pattern
+  - L2033: H2 Opening the Blocked tab
+  - L2047: H2 Reading a blocked row
+  - L2068: H2 Filtering and searching
+  - L2078: H2 Grouping and sorting
+  - L2097: H2 What to do with each blocker type
+  - L2110: H2 How the data is built
+  - L2118: H2 Related
+  - L2181: H2 Queue Filters
+  - L2293: H2 What Happens After You Decide
+  - L2375: H2 Page Header and Date Range
+  - L2394: H2 Overview Tab
+    - L2400: H3 Inference ledger card
+    - L2432: H3 By project
+    - L2475: H3 What Happens When Limits Are Hit
+    - L2491: H3 Active incidents
+    - L2609: H3 Quota windows
+    - L2645: H3 Why this matters
+    - L2649: H3 Attribution
+    - L2680: H3 By kind
+    - L2684: H3 Estimated versus actual
+    - L2698: H3 From the Dashboard
+  - L2757: H2 What Gets Logged
+  - L2788: H2 Filtering
+- L2856: H1 Feedback & Voting
+  - L2864: H2 How voting works
+    - L2870: H3 What gets stored
+  - L2883: H2 Viewing your votes
+      - L2935: H4 Filters
+  - L3022: H2 Sharing preferences
+    - L3083: H3 Filter tabs
+    - L3107: H3 What each row shows
+    - L3139: H3 Name and title
+    - L3179: H3 Create
+  - L3206: H2 Dashboard Tab
+    - L3212: H3 Latest run card
+    - L3251: H3 Managed vs external bundles
+    - L3260: H3 The entry file
+      - L3295: H4 Writing `SOUL.md`
+      - L3327: H4 Writing `TOOLS.md`
+      - L3331: H4 When the simple pattern is fine
+    - L3345: H3 Editing files
+    - L3355: H3 When changes take effect
+    - L3367: H3 Sections on the tab
+    - L3379: H3 Autosave
+    - L3393: H3 Warnings
+  - L3401: H2 Configuration Tab
+    - L3407: H3 The shared configuration form
+    - L3425: H3 Configuration revisions
+    - L3433: H3 Save flow
+  - L3439: H2 Runs Tab
+    - L3445: H3 The run list
+    - L3460: H3 The run detail
+    - L3474: H3 Live runs
+    - L3478: H3 Cancelling, retrying, resuming
+    - L3484: H3 Filters and sorting
+    - L3505: H3 The policy card
+    - L3519: H3 What happens at each threshold
+  - L3531: H2 Keys
+    - L3537: H3 Issuing a key
+    - L3545: H3 Active keys
+    - L3549: H3 Revoking a key
+    - L3553: H3 Where keys flow
+    - L3602: H3 Session persistence
+    - L3621: H3 Why this matters day-to-day
+    - L3636: H3 Try a new instruction quickly
+  - L3680: H2 Related guides
+    - L3753: H3 2. Import from a gist
+    - L3757: H3 3. Import from a local file or folder
+  - L3781: H2 File inventory
+  - L3835: H2 Trust level
+  - L3889: H2 You're set
+  - L3914: H2 How it works
+    - L3937: H3 Small team
+    - L3949: H3 Scaled team
+  - L3968: H2 Adding a manager
+  - L3998: H2 Adding workers
+    - L4044: H3 Navigating the chart
+  - L4090: H2 How delegation flows once the team is in place
+  - L4105: H2 You're set
+- L4116: H1 Delegation
+  - L4122: H2 How automatic delegation works
+  - L4195: H2 Common delegation patterns
+    - L4197: H3 Small team: direct delegation
+    - L4210: H3 Larger team: cascading delegation
+  - L4276: H2 You're set
+    - L4321: H3 Prerequisites
+    - L4326: H3 Configuration fields
+    - L4362: H3 Prerequisites
+    - L4367: H3 Configuration fields
+    - L4409: H3 Configuration fields
+  - L4426: H2 Shell Process (`process`)
+    - L4434: H3 Configuration fields
+  - L4481: H2 You're set
+  - L4514: H2 The two lists
+    - L4523: H3 What each row shows
+    - L4564: H3 From npm
+    - L4573: H3 From a local path
+  - L4642: H2 Where to go next
+- L4654: H1 Projects
+  - L4664: H2 Project List
+    - L4670: H3 Row anatomy
+    - L4682: H3 Filters and actions
+  - L4692: H2 Overview Tab
+    - L4698: H3 What you see
+    - L4704: H3 Linked goals and progress
+    - L4710: H3 When to use the Overview tab
+    - L4728: H3 What is shown
+    - L4736: H3 Filtering and view state
+  - L4779: H2 Configuration Tab
+    - L4785: H3 Basic properties
+    - L4802: H3 Environment variables
+    - L4824: H3 Archive and unarchive
+    - L4862: H3 Setting or changing the amount
+    - L4878: H3 Resume after a hard stop
+  - L4889: H2 Where to go next
+- L4901: H1 Goals
+  - L4916: H2 Goals List
+    - L4922: H3 Tree view
+    - L4932: H3 Creating a goal
+    - L4938: H3 Filters
+  - L4944: H2 Goal Detail
+    - L4950: H3 Header and body
+    - L4963: H3 Tabs
+    - L4972: H3 Progress rollup
+    - L4988: H3 Linking a project to a goal
+    - L5003: H3 Why the indirection matters
+  - L5009: H2 Goal Hierarchy
+    - L5013: H3 When to use sub-goals
+    - L5019: H3 Creating a sub-goal
+    - L5025: H3 Reparenting and flattening
+    - L5031: H3 Status propagation
+  - L5037: H2 Where to go next
+  - L5100: H2 Routines — scheduled work the right way
+    - L5111: H3 Creating a routine
+    - L5121: H3 Routine policies worth knowing
+  - L5132: H2 The Routines list
+    - L5138: H3 List columns and badges
+    - L5151: H3 Grouping and filtering
+    - L5163: H3 Creating a routine from the list
+    - L5174: H3 Run now, pause, archive
+    - L5180: H3 Recent Runs tab
+  - L5188: H2 The routine detail page
+    - L5194: H3 Header
+    - L5213: H3 Run history and the next-run countdown
+  - L5223: H2 Cron picker
+    - L5243: H3 Timezone handling
+  - L5260: H2 Variable templates
+    - L5264: H3 Defining variables
+    - L5275: H3 Using variables at run time
+  - L5285: H2 Catch-up behaviour
+  - L5298: H2 When a timer IS the right answer
+  - L5326: H2 A healthy setup looks like this
+  - L5339: H2 You're set
+    - L5353: H3 1. Identity
+    - L5374: H3 3. Get assignments
+    - L5382: H3 4. Pick work
+    - L5401: H3 6. Understand context
+    - L5410: H3 7. Do the work
+    - L5414: H3 8. Update status
+    - L5432: H3 9. Delegate if needed
+    - L5443: H3 Critical rules
+  - L5501: H2 Runtime services
+  - L5543: H2 When you'll encounter this
+  - L5583: H2 Configuration tab
+    - L5648: H3 Concrete location
+    - L5663: H3 Working with runtime config overrides
+    - L5709: H3 How operations map to what you did
+  - L5755: H2 Archiving and cleanup
+    - L5806: H3 When isolation is overkill
+  - L5818: H2 Observability at a glance
+  - L5864: H2 You're set
+  - L5885: H2 The three layers
+  - L5922: H2 Changes-requested loop
+  - L5942: H2 Policy variants
+    - L5983: H3 Run-level tracking fields
+  - L5993: H2 Data model
+  - L6057: H2 Access control
+    - L6112: H3 Requesting changes
+  - L6128: H2 UI
+  - L6146: H2 Design principles
+  - L6167: H2 What a package contains
+    - L6194: H3 In the UI
+    - L6200: H3 In the terminal
+    - L6265: H3 Preview before applying
+    - L6275: H3 Handling name conflicts
+  - L6289: H2 Common use cases
+  - L6327: H2 After importing
+  - L6339: H2 You're set
+- L6350: H1 Terminal Setup
+  - L6358: H2 Prerequisites
+  - L6379: H2 Step 2 — Run the onboarding command
+  - L6428: H2 Advanced configuration
+  - L6434: H2 You're set
+  - L6513: H2 3. Where the warnings show up
+  - L6561: H2 5. What 100% actually does
+  - L6595: H2 6. Verify it works: force a spike
+  - L6645: H2 See also
+- L6658: H1 Create a routine that runs daily
+  - L6668: H2 What you'll need
+  - L6679: H2 1. Create the routine
+  - L6702: H2 2. Attach a daily schedule trigger
+  - L6733: H2 3. Pick a concurrency and catch-up policy
+  - L6756: H2 Pattern 1 — Daily standup
+  - L6921: H2 Verify it fired
+  - L6955: H2 See also
+  - L6976: H2 Architecture
+  - L6996: H2 1. Prereqs
+    - L7094: H3 Option B — GitHub App — durable path
+  - L7225: H2 See also
+  - L7259: H2 Architecture
+  - L7285: H2 1. Prereqs
+    - L7349: H3 Path B — Hermes Local
+    - L7411: H3 Path B — Hermes Local
+    - L7505: H3 Setup
+    - L7525: H3 Verify
+  - L7577: H2 See also
+  - L7600: H2 Architecture
+  - L7620: H2 1. Prereqs
+    - L7687: H3 From a local path
+  - L7855: H2 7. Versioning and updates
+  - L7900: H2 8. Scoping rules to keep in mind
+  - L7938: H2 See also
+  - L7966: H2 Pick a path
+    - L7982: H3 1. Generate the invite prompt
+    - L8017: H3 4. Smoke test
+    - L8029: H3 1. Stand up a receiver
+    - L8094: H3 3. Smoke test
+    - L8193: H3 3. What you give up
+  - L8203: H2 Tradeoffs at a glance
+  - L8224: H2 See also
+  - L8244: H2 Architecture
+  - L8265: H2 Prerequisites
+  - L8274: H2 Fly.io (primary path)
+  - L8301: H2 VPS (secondary path)
+  - L8323: H2 DB migrations
+  - L8337: H2 Observability
+  - L8345: H2 Backups
+  - L8367: H2 See also
+  - L8387: H2 What a package contains
+  - L8567: H2 5. Why `replace` is rejected on safe routes
+  - L8614: H2 7. Round-trip verification
+  - L8626: H2 See also
+  - L8665: H2 3. Run dies with exit code 143
+  - L8699: H2 Where to look first
+  - L8707: H2 When to ask a human
+  - L8715: H2 See also
+  - L8734: H2 1. Turn the policy on
+  - L8769: H2 3. Review in the board UI
+  - L8825: H2 6. Denial path: what the requester sees
+  - L8842: H2 See also
+  - L8864: H2 Architecture
+  - L8884: H2 What's worth piping
+  - L8925: H2 The notifier routine
+  - L8984: H2 Message format
+    - L8988: H3 Slack (Block Kit)
+    - L9028: H3 Discord (embeds)
+  - L9066: H2 Testing the loop
+  - L9095: H2 Common failure modes
+  - L9104: H2 See also
+  - L9146: H2 Prereqs
+  - L9225: H2 5. Confirm and dashboard check
+  - L9238: H2 The reload loop
+  - L9253: H2 Cleaning up between iterations
+  - L9303: H2 See also
+  - L9323: H2 General Settings
+    - L9329: H3 Name and description
+    - L9338: H3 Logo and brand color
+    - L9347: H3 Hiring
+    - L9355: H3 Feedback Sharing
+    - L9368: H3 Danger Zone
+  - L9374: H2 Access & Members
+    - L9380: H3 Roles
+    - L9393: H3 The members list
+    - L9405: H3 Editing a member
+    - L9417: H3 Adding and removing members
+    - L9421: H3 Pending human joins
+  - L9427: H2 Invites
+    - L9433: H3 Creating an invite
+    - L9445: H3 Invite expiry and state
+    - L9449: H3 Invite history
+    - L9462: H3 What the invited person sees
+  - L9468: H2 Join Requests
+    - L9474: H3 Filters
+    - L9483: H3 What's on each card
+    - L9494: H3 Permissions
+    - L9506: H3 What gets included
+    - L9525: H3 Downloading
+  - L9533: H2 Import
+    - L9539: H3 Choosing a source
+    - L9546: H3 Choosing a target
+    - L9561: H3 Preview
+    - L9571: H3 Applying the import
+- L9588: H1 Settings
+  - L9600: H2 Profile
+  - L9618: H2 Instance: General
+    - L9644: H3 Keyboard shortcuts
+    - L9648: H3 Backup retention
+    - L9658: H3 AI feedback sharing
+    - L9668: H3 Sign out
+  - L9674: H2 Instance: Access
+    - L9689: H3 Finding and inspecting a user
+    - L9699: H3 Promote to instance admin
+    - L9732: H3 Health status
+    - L9743: H3 Enable / disable
+    - L9778: H3 What the scheduler does
+    - L9784: H3 What this page shows
+    - L9803: H3 When to tune it
+    - L9811: H3 Safe defaults
+  - L9819: H2 Instance: Experimental
+    - L9825: H3 What "experimental" means here
+    - L9835: H3 The available flags
+  - L9844: H2 Where to go next
+    - L9881: H3 Status badges
+  - L9934: H2 Enabling and disabling
+    - L9949: H3 What "disabled" actually stops
+  - L9960: H2 Upgrades
+    - L10008: H3 Permissions sidebar
+    - L10030: H3 Interpreting job status dots
+  - L10063: H2 You're set
+  - L10071: H2 Quick reference
+  - L10107: H2 When you need each flow
+    - L10153: H3 Starting the login
+    - L10181: H3 Approving the challenge in the browser
+    - L10224: H3 Using it
+    - L10247: H3 Rotating and revoking
+  - L10279: H2 Where to go next
+  - L10295: H2 Base URL
+  - L10370: H2 Request Format
+  - L10384: H2 Response Format
+  - L10418: H2 Health Check
+  - L10503: H2 Reading This Reference
+  - L10686: H2 Examples
+  - L10778: H2 Update note
+- L10791: H1 Companies
+  - L10824: H2 List companies
+  - L10983: H2 Update branding
+  - L11131: H2 Archive or delete
+  - L11142: H2 Practical notes
+  - L11160: H2 Quick Rules
+  - L11171: H2 Common Fields
+    - L11361: H3 Example
+    - L11516: H3 Example
+  - L11586: H2 Update Permissions
+  - L11604: H2 Pause, Resume, Terminate, Delete
+    - L11647: H3 Example
+    - L11718: H3 Example
+    - L11789: H3 Common skipped responses
+    - L11862: H3 Sync request
+  - L11914: H2 Configuration
+  - L11968: H2 Common Edge Cases
+  - L11979: H2 Notes
+  - L12006: H2 Overview
+    - L12034: H3 Query Parameters
+    - L12062: H3 Example
+    - L12094: H3 Relationship Notes
+    - L12238: H3 Blocking Links
+    - L12246: H3 Example
+    - L12488: H3 @-mentions
+    - L12505: H3 Example
+  - L12566: H2 Documents
+    - L12578: H3 List Documents
+    - L12586: H3 Get Document By Key
+    - L12594: H3 Create Or Update Document
+      - L12617: H4 Writing to a locked document
+    - L12626: H3 Lock A Document
+    - L12636: H3 Unlock A Document
+    - L12644: H3 Revision History
+    - L12652: H3 Restore A Revision
+    - L12662: H3 Delete Document
+    - L12672: H3 Example
+  - L12736: H2 Attachments
+    - L12740: H3 List Attachments
+    - L12748: H3 Upload Attachment
+    - L12769: H3 Download Attachment Content
+    - L12779: H3 Delete Attachment
+    - L12787: H3 Example
+    - L12879: H3 Example
+  - L12934: H2 Interactions
+    - L12940: H3 List Interactions
+    - L12948: H3 Create Interaction
+    - L12966: H3 Respond, Accept, Reject
+    - L12978: H3 Choosing the kind
+  - L12990: H2 Recovery actions
+    - L13015: H3 Resolve the active recovery action
+    - L13056: H3 Recovery action shape
+      - L13091: H4 Enum values
+    - L13129: H3 Status values
+    - L13141: H3 State machine
+    - L13202: H3 Allowed transitions
+    - L13217: H3 Automatic side effects
+    - L13248: H3 Common mistakes
+    - L13345: H3 Payload shape per type
+  - L13471: H2 Review A Decision
+  - L13570: H2 Resubmit
+  - L13719: H2 Lifecycle
+- L13750: H1 Goals and Projects
+  - L13756: H2 At a Glance
+  - L13768: H2 Goals
+    - L13786: H3 Fields
+    - L13795: H3 Routes
+    - L13797: H3 List Goals
+    - L13805: H3 Get Goal
+    - L13813: H3 Create Goal
+    - L13870: H3 Update Goal
+    - L13885: H3 Delete Goal
+  - L13895: H2 Projects
+    - L13907: H3 Fields
+    - L13928: H3 Routes
+    - L13930: H3 List Projects
+    - L13938: H3 Get Project
+    - L13946: H3 Create Project
+    - L14024: H3 Update Project
+    - L14039: H3 Delete Project
+  - L14168: H2 Practical Model
+    - L14362: H3 Breakdown views
+    - L14452: H3 Policy upsert
+    - L14481: H3 What happens at the thresholds
+  - L14518: H2 Internal Diagnostics
+  - L14526: H2 Practical Reading Order
+  - L14620: H2 What Is Stored
+  - L15092: H2 Practical Notes
+- L15410: H1 Dashboard
+  - L15416: H2 Get Dashboard
+    - L15424: H3 What the buckets mean
+    - L15443: H3 Common uses
+    - L15449: H3 Example response
+    - L15481: H3 Request examples
+    - L15523: H3 Notes
+- L15534: H1 Routines
+  - L15542: H2 What A Routine Controls
+  - L15565: H2 List Routines
+    - L15580: H3 Example
+  - L15622: H2 Get Routine
+  - L15641: H2 Create Routine
+    - L15673: H3 Example
+  - L15779: H2 Update Routine
+  - L15803: H2 Trigger Types
+    - L15807: H3 Schedule
+  - L15865: H2 Add Trigger
+    - L15876: H3 Example
+  - L15940: H2 Update Trigger
+  - L15958: H2 Delete Trigger
+  - L15987: H2 Manual Run
+    - L16018: H3 Example
+  - L16085: H2 Fire Public Trigger
+    - L16109: H3 Example
+  - L16173: H2 List Runs
+  - L16196: H2 Routine Run Statuses
+  - L16234: H2 Practical Notes
+  - L16364: H2 Registry and discovery
+  - L16387: H2 Config
+  - L16404: H2 Local folders
+  - L16415: H2 Dashboard
+  - L16421: H2 Worker bridge
+- L16440: H1 Instance Admin
+  - L16456: H2 Instance settings
+  - L16497: H2 Environments
+  - L16532: H2 Related
+  - L16556: H2 Command Families
+  - L16567: H2 Common Options
+  - L16593: H2 Context Profiles
+  - L16625: H2 Next Steps
+- L16637: H1 Setup Commands
+  - L16648: H2 When To Use
+  - L16792: H2 Local Paths
+  - L16812: H2 Next Step
+- L16822: H1 Control-Plane Commands
+  - L16837: H2 Working Pattern
+  - L16970: H2 Next Steps
+- L16981: H1 Command Reference
+- L16987: H1 Command Reference
+  - L16995: H2 Synopsis
+  - L17011: H2 Common Options
+  - L17038: H2 Setup commands
+  - L17214: H2 `context`
+  - L17651: H2 `dashboard`
+  - L17918: H2 `feedback`
+  - L18040: H2 `env-lab`
+  - L18089: H2 `routines`
+  - L18110: H2 Environment Variables
+    - L18114: H3 Local instance and config
+  - L18159: H2 Exit Codes
+  - L18172: H2 Examples
+  - L18220: H2 Related
+    - L18275: H3 Frontmatter fields
+    - L18298: H3 Body
+    - L18302: H3 Supporting files
+    - L18359: H3 Import: accepted sources
+    - L18382: H3 What happens during import
+    - L18392: H3 Project scan
+    - L18402: H3 Storage
+    - L18469: H3 Inspecting current state
+  - L18479: H2 4. Scoping rules
+  - L18523: H2 6. Naming collisions and resolution
+    - L18525: H3 Canonical key
+    - L18539: H3 Reference resolution
+    - L18561: H3 Project-scan conflicts
+    - L18565: H3 Slug normalisation
+  - L18571: H2 7. Versioning semantics
+    - L18585: H3 `update-status` response
+    - L18637: H3 "Frontmatter changes aren't taking effect"
+  - L18656: H2 See also
+  - L18752: H2 Common Concepts
+  - L18767: H2 Next Steps
+  - L18799: H2 When To Use
+  - L18806: H2 When Not To Use
+  - L18814: H2 Common Fields
+  - L18837: H2 Session Persistence
+  - L18878: H2 Environment Test
+  - L18891: H2 Example
+  - L18917: H2 Next Steps
+  - L18934: H2 When To Use
+  - L18941: H2 When Not To Use
+  - L18949: H2 Common Fields
+  - L18972: H2 Session Persistence
+  - L19015: H2 Environment Test
+  - L19028: H2 Example
+  - L19055: H2 Next Steps
+- L19066: H1 Gemini Local
+  - L19072: H2 When To Use
+  - L19079: H2 When Not To Use
+  - L19087: H2 Common Fields
+  - L19109: H2 Session Persistence
+  - L19127: H2 Environment Test
+  - L19140: H2 Example
+  - L19168: H2 Next Steps
+- L19179: H1 Cursor Local
+  - L19185: H2 When To Use
+  - L19191: H2 When Not To Use
+  - L19199: H2 Common Fields
+  - L19216: H2 Session Persistence
+  - L19230: H2 Models
+  - L19250: H2 Example
+  - L19267: H2 Next Steps
+- L19277: H1 Cursor Cloud
+- L19283: H1 Cursor Cloud
+  - L19289: H2 When To Use
+  - L19295: H2 When Not To Use
+  - L19303: H2 Common Fields
+  - L19324: H2 Session Persistence
+  - L19340: H2 Example
+  - L19367: H2 Related
+- L19377: H1 ACPX Local
+- L19383: H1 ACPX Local
+  - L19391: H2 When To Use
+  - L19397: H2 When Not To Use
+  - L19405: H2 Common Fields
+  - L19432: H2 Example
+  - L19453: H2 Related
+  - L19470: H2 When To Use
+  - L19476: H2 When Not To Use
+  - L19484: H2 Common Fields
+  - L19504: H2 Session Persistence
+  - L19519: H2 Models
+  - L19536: H2 Example
+  - L19562: H2 Next Steps
+- L19572: H1 Pi Local
+  - L19578: H2 When To Use
+  - L19585: H2 When Not To Use
+  - L19593: H2 Common Fields
+  - L19611: H2 Session Persistence
+  - L19625: H2 Example
+  - L19650: H2 Next Steps
+- L19660: H1 Hermes Local
+  - L19666: H2 When To Use
+  - L19673: H2 When Not To Use
+  - L19681: H2 Common Fields
+    - L19683: H3 Core
+    - L19692: H3 Tools
+    - L19706: H3 Advanced
+  - L19720: H2 Auto Model Detection
+  - L19726: H2 Session Persistence
+  - L19749: H2 Prompt Template Variables
+  - L19789: H2 Example
+  - L19814: H2 Next Steps
+- L19824: H1 Grok Local
+- L19830: H1 Grok Local
+  - L19836: H2 When To Use
+  - L19842: H2 When Not To Use
+  - L19850: H2 Common Fields
+  - L19871: H2 Session Persistence
+  - L19894: H2 Example
+  - L19921: H2 Next Steps
+  - L19940: H2 When To Use
+  - L19946: H2 When Not To Use
+  - L19953: H2 Transport
+  - L19965: H2 Common Fields
+  - L20028: H2 Payload Mapping
+  - L20043: H2 Timeouts
+  - L20052: H2 Log Format
+    - L20067: H3 Automated join smoke test
+    - L20075: H3 One-command gateway UI
+    - L20096: H3 Network tips
+  - L20108: H2 Onboarding Checklist
+  - L20124: H2 Example
+  - L20149: H2 Next Steps
+- L20159: H1 Process
+  - L20167: H2 When To Use
+  - L20173: H2 When Not To Use
+  - L20181: H2 Common Fields
+  - L20196: H2 How It Works
+  - L20208: H2 Environment Test
+  - L20220: H2 Example
+  - L20244: H2 Practical Notes
+  - L20252: H2 Next Steps
+- L20262: H1 HTTP
+  - L20270: H2 When To Use
+  - L20276: H2 When Not To Use
+  - L20284: H2 Common Fields
+  - L20298: H2 Request Body
+  - L20327: H2 Environment Test
+  - L20339: H2 Example
+  - L20360: H2 Practical Notes
+  - L20368: H2 Next Steps
+    - L20410: H3 Reliability tuning (v2026.517.0)
+  - L20469: H2 Related
+  - L20485: H2 When To Use
+  - L20491: H2 When Not To Use
+  - L20499: H2 Built-In Vs External
+  - L20513: H2 Package Shape
+  - L20613: H2 UI Parser Contract
+  - L20625: H2 Runtime Lifecycle
+  - L20655: H2 Practical Notes
+  - L20664: H2 Next Steps
+  - L20684: H2 Built-In Vs External
+  - L20697: H2 Recommended Package Layout
+  - L20720: H2 Root Metadata
+  - L20771: H2 Execute
+  - L20797: H2 Environment Test
+  - L20812: H2 Session Persistence
+  - L20849: H2 UI Parser
+  - L20882: H2 Next Steps
+  - L20905: H2 What It Solves
+  - L20919: H2 How It Loads
+  - L20934: H2 Package Contract
+  - L21035: H2 Constraints
+  - L21046: H2 Testing
+  - L21070: H2 When To Skip It
+  - L21082: H2 Next Steps
+  - L21108: H2 When to use
+  - L21118: H2 When not to use
+  - L21126: H2 Package surface
+    - L21180: H3 Manifest types
+    - L21205: H3 JSON-RPC protocol
+    - L21245: H3 Testing utilities
+  - L21263: H2 Example
+  - L21307: H2 Worker entrypoint validation
+  - L21325: H2 Related
+- L21337: H1 LLM Wiki
+- L21343: H1 LLM Wiki
+  - L21373: H2 What you get
+  - L21392: H2 The wiki root folder
+  - L21419: H2 Spaces
+  - L21429: H2 Capturing sources and building pages
+  - L21461: H2 REST routes
+  - L21483: H2 Tips and common use cases
+  - L21493: H2 Related
+  - L21520: H2 Quick Comparison
+    - L21522: H3 Local Trusted
+  - L21545: H2 Choosing A Mode
+  - L21565: H2 Start Here
+  - L21595: H2 Mode Summary
+  - L21607: H2 `local_trusted`
+  - L21692: H2 Migrating Modes
+  - L21712: H2 Changing The Mode
+- L21733: H1 Local Development
+  - L21741: H2 Prerequisites
+  - L21766: H2 One-Command Bootstrap
+  - L21784: H2 Managed Dev Runner
+  - L21797: H2 Private Network Dev
+  - L21823: H2 Health Checks
+  - L21845: H2 Reset Local Data
+  - L21874: H2 Default Data Paths
+  - L21905: H2 Compose Quickstart
+  - L21935: H2 Manual Image Build
+  - L21953: H2 What Persists
+  - L22015: H2 Embedded PostgreSQL
+  - L22074: H2 Hosted PostgreSQL
+  - L22102: H2 Switching Modes
+- L22119: H1 Storage
+  - L22127: H2 Storage Modes
+  - L22138: H2 Local Disk
+  - L22152: H2 S3-Compatible Storage
+  - L22172: H2 What Gets Stored
+  - L22231: H2 Environment Overrides
+  - L22249: H2 Strict Mode
+- L22320: H1 Environment Variables
+- L22326: H1 Environment Variables
+  - L22395: H2 Storage
+  - L22409: H2 Scheduler
+- L22500: H1 Tailscale Private Access
+  - L22508: H2 Start In Private Mode
+  - L22533: H2 Find The Reachable Address
+  - L22545: H2 Open The Instance
+  - L22561: H2 Allow Custom Hostnames
+  - L22573: H2 Verify Connectivity
 
 ## installation_deployment
 
-  - L15: H2 Before the path: install Paperclip
-  - L128: H2 Ready to install?
-- L301: H1 Installation
-  - L340: H2 Step 3 — Install the app
-  - L421: H2 Step 1 — Install Node.js 20 or later
-  - L433: H2 Step 2 — Install pnpm
-  - L476: H2 Step 1 — Provision the server
-  - L503: H2 Step 2 — Point your domain at the server
-  - L519: H2 Step 3 — Install Node.js 20+ and pnpm
-  - L557: H2 Step 5 — Install Paperclip in public deployment mode
-  - L585: H2 Step 6 — Run Paperclip under systemd
-  - L635: H2 Step 7 — Put Nginx in front of Paperclip
-  - L674: H2 Step 8 — Add HTTPS with Let's Encrypt
-  - L750: H2 Connecting the Desktop app to your server
-  - L4162: H2 Installing an external adapter
-  - L4192: H2 Reload, reinstall, and remove
-  - L5889: H2 Step 1 — Install pnpm
-  - L5928: H2 Deployment modes
-  - L6300: H2 Pattern 3 — Deploy checks
-- L6675: H1 Add an MCP server to an agent's toolkit
-  - L6726: H2 2. Local MCP server (stdio)
-  - L6809: H2 3. Remote MCP server (HTTP/SSE + OAuth)
-  - L6919: H2 6. Worked example: GitHub MCP server
-  - L7078: H2 3. Install the skill at company level
-    - L7123: H3 Verify the install
-- L7580: H1 Deploy Paperclip to a VPS or Fly.io
-    - L8683: H3 Deployment and auth
-    - L8783: H3 Installed adapters
-  - L8963: H2 Installing a plugin
-  - L9560: H2 Deployment modes
-    - L16263: H3 `paperclipai plugin install <package>`
-    - L16285: H3 `paperclipai plugin uninstall <pluginKey>`
-    - L16394: H3 Client (server connection)
-    - L16413: H3 Server-side (consumed when the CLI starts the server)
-    - L16443: H3 Bootstrap a local install
-  - L16584: H2 2. Installation pipeline
-    - L16839: H3 Install-update semantics
-  - L17949: H2 Running OpenClaw in Docker
-  - L18340: H2 Installation
-  - L18368: H2 Server Contract
-  - L18503: H2 Server Factory
-- L18820: H1 Deployment Overview
-  - L18827: H2 Deployment Modes
-- L18910: H1 Deployment Modes
-  - L19054: H2 Start The Server
-- L19188: H1 Docker
-  - L19548: H2 Server Configuration
-  - L19563: H2 Deployment And Auth
+  - L26: H2 Before the path: install Paperclip
+  - L154: H2 Ready to install?
+- L355: H1 Installation
+  - L396: H2 Step 3 — Install the app
+  - L477: H2 Step 1 — Install Node.js 20 or later
+  - L490: H2 Step 2 — Install pnpm
+  - L537: H2 Step 1 — Provision the server
+  - L564: H2 Step 2 — Point your domain at the server
+  - L583: H2 Step 3 — Install Node.js 20+ and pnpm
+  - L622: H2 Step 5 — Install Paperclip in public deployment mode
+  - L653: H2 Step 6 — Run Paperclip under systemd
+  - L708: H2 Step 7 — Put Nginx in front of Paperclip
+  - L752: H2 Step 8 — Add HTTPS with Let's Encrypt
+  - L838: H2 Connecting the Desktop app to your server
+  - L4560: H2 Installing an external adapter
+  - L4587: H2 Reload, reinstall, and remove
+  - L6369: H2 Step 1 — Install pnpm
+  - L6410: H2 Deployment modes
+  - L6824: H2 Pattern 3 — Deploy checks
+- L7241: H1 Add an MCP server to an agent's toolkit
+  - L7295: H2 2. Local MCP server (stdio)
+  - L7384: H2 3. Remote MCP server (HTTP/SSE + OAuth)
+  - L7501: H2 6. Worked example: GitHub MCP server
+  - L7683: H2 3. Install the skill at company level
+    - L7730: H3 Verify the install
+- L8238: H1 Deploy Paperclip to a VPS or Fly.io
+  - L9133: H2 What "local-path install" actually means
+  - L9188: H2 3. Install dependencies and run the watch build
+  - L9202: H2 4. Install from the absolute path
+  - L9276: H2 When to switch to an npm install
+    - L9624: H3 Deployment and auth
+    - L9723: H3 Installed adapters
+  - L9910: H2 Installing a plugin
+    - L9943: H3 Uninstalling
+    - L10263: H3 Multiple servers and users
+  - L10563: H2 Deployment modes
+  - L16271: H2 List installed adapters
+  - L16279: H2 Install an external adapter
+  - L16303: H2 Delete an installed adapter
+  - L16319: H2 Reinstall an adapter
+  - L16374: H2 Install and lifecycle
+  - L16471: H2 Database backups
+    - L17800: H3 `paperclipai plugin install <package>`
+    - L17823: H3 `paperclipai plugin uninstall <pluginKey>`
+    - L18124: H3 Client (server connection)
+    - L18143: H3 Server-side (consumed when the CLI starts the server)
+    - L18176: H3 Bootstrap a local install
+  - L18338: H2 2. Installation pipeline
+    - L18600: H3 Install-update semantics
+  - L20063: H2 Running OpenClaw in Docker
+  - L20568: H2 Installation
+  - L20599: H2 Server Contract
+  - L20747: H2 Server Factory
+    - L21235: H3 Bundling and dev server
+  - L21353: H2 Quick install
+- L21504: H1 Deployment Overview
+  - L21512: H2 Deployment Modes
+- L21587: H1 Deployment Modes
+  - L21750: H2 Start The Server
+- L21897: H1 Docker
+- L21995: H1 Database
+  - L22003: H2 Database Modes
+  - L22044: H2 Local PostgreSQL In Docker
+  - L22334: H2 Server Configuration
+  - L22354: H2 Deployment And Auth
 
 ## issues_workflow
 
-  - L173: H2 Task
-- L1208: H1 Issues
-  - L1230: H2 Opening the Issues page
-  - L1254: H2 Creating a New Issue
-  - L1319: H2 Giving Feedback via Comments
-  - L1336: H2 Reviewing and Closing an Issue
-  - L1344: H2 Issue Status Reference
-  - L1366: H2 The Inbox
-  - L1420: H2 My Issues
-  - L1443: H2 The Issue Detail Sidebar
-    - L1578: H3 Checkout pattern
-  - L3143: H2 Common Workflows
-    - L3712: H3 No tasks are being created
-    - L3736: H3 A specific task is stuck
-    - L3871: H3 No tasks are being created
-    - L3895: H3 A specific task is stuck
-  - L4309: H2 Issues Tab
-  - L4575: H2 Linking Issues and Projects to a Goal
-  - L5292: H2 Issues tab
-  - L5395: H2 Common workflows
-  - L5519: H2 The comment-required backstop
-    - L5544: H3 Execution policy (issue field: `executionPolicy`)
-    - L5566: H3 Execution state (issue field: `executionState`)
-    - L5582: H3 Execution decisions (table: `issue_execution_decisions`)
-    - L5613: H3 Setting a policy at issue creation
-    - L5633: H3 Updating a policy on an existing issue
-    - L5675: H3 New issue dialog
-  - L6269: H2 Pattern 2 — Inbox triage
-  - L6601: H2 5. Assign a task and watch it land
-  - L6630: H2 6. Review workflow
-    - L6907: H3 c. Probe with a one-line task
-    - L6948: H3 Drive it from a Paperclip task
-  - L7964: H2 2. Checkout fails with `409 Conflict`
-  - L7992: H2 5. Same "blocked" comment posted every heartbeat
-  - L10278: H2 Compact Inbox (`inbox-lite`)
-- L10986: H1 Issues
-  - L11009: H2 List Issues
-  - L11057: H2 Get Issue
-  - L11123: H2 Create Issue
-  - L11221: H2 Update Issue
-  - L11324: H2 Checkout a Task
-  - L11422: H2 Release a Task
-  - L11441: H2 Comments
-    - L11443: H3 List Comments
-  - L11984: H2 Issue Lifecycle
-    - L12082: H3 Blockers (`blockedByIssueIds`)
-    - L12087: H3 Hidden issues
-  - L12268: H2 Linked Issues
-  - L12366: H2 Comments
-  - L12458: H2 Comments
-  - L15103: H2 Local Workflow
-  - L15359: H2 Issue Commands
-  - L15853: H2 `issue`
-    - L15855: H3 `paperclipai issue list`
-    - L15871: H3 `paperclipai issue get <idOrIdentifier>`
-    - L15879: H3 `paperclipai issue create`
-    - L15905: H3 `paperclipai issue update <issueId>`
-    - L15933: H3 `paperclipai issue comment <issueId>`
-    - L15946: H3 `paperclipai issue checkout <issueId>`
-    - L15959: H3 `paperclipai issue release <issueId>`
-    - L16086: H3 `paperclipai approval comment <approvalId>`
-    - L16470: H3 Triage and update an issue
-  - L18412: H2 Example Workflow
+  - L211: H2 Task
+- L1447: H1 Issues
+- L1453: H1 Issues
+  - L1479: H2 Opening the Issues page
+  - L1513: H2 Creating a New Issue
+  - L1588: H2 Giving Feedback via Comments
+  - L1608: H2 Reviewing and Closing an Issue
+  - L1618: H2 Issue Status Reference
+  - L1647: H2 The Inbox
+  - L1713: H2 My Issues
+  - L1739: H2 The Issue Detail Sidebar
+  - L1874: H2 Walking through sub-issues
+    - L1911: H3 Checkout pattern
+- L2017: H1 Blocked Inbox
+- L2023: H1 Blocked Inbox
+    - L3235: H3 Recent issues
+  - L3632: H2 Common Workflows
+    - L4243: H3 No tasks are being created
+    - L4267: H3 A specific task is stuck
+  - L4722: H2 Issues Tab
+    - L4742: H3 Creating issues in the project
+  - L4980: H2 Linking Issues and Projects to a Goal
+    - L4997: H3 Linking individual issues
+    - L5389: H3 5. Checkout
+  - L5723: H2 Issues tab
+    - L5744: H3 Source issue vs. linked issues
+  - L5833: H2 Common workflows
+  - L5972: H2 The comment-required backstop
+    - L5995: H3 Execution policy (issue field: `executionPolicy`)
+    - L6019: H3 Execution state (issue field: `executionState`)
+    - L6035: H3 Execution decisions (table: `issue_execution_decisions`)
+    - L6067: H3 Setting a policy at issue creation
+    - L6087: H3 Updating a policy on an existing issue
+    - L6130: H3 New issue dialog
+    - L6140: H3 Issue properties panel
+  - L6792: H2 Pattern 2 — Inbox triage
+  - L7150: H2 5. Assign a task and watch it land
+  - L7181: H2 6. Review workflow
+    - L7488: H3 c. Probe with a one-line task
+    - L7532: H3 Drive it from a Paperclip task
+  - L8655: H2 2. Checkout fails with `409 Conflict`
+  - L8689: H2 5. Same "blocked" comment posted every heartbeat
+  - L11294: H2 Compact Inbox (`inbox-lite`)
+- L11992: H1 Issues
+- L11998: H1 Issues
+  - L12026: H2 List Issues
+  - L12072: H2 Get Issue
+  - L12121: H2 Create Issue
+  - L12214: H2 Update Issue
+  - L12310: H2 Checkout a Task
+    - L12392: H3 Reclaiming a stale checkout
+  - L12404: H2 Release a Task
+  - L12425: H2 Comments
+    - L12427: H3 List Comments
+    - L12441: H3 Get Comment
+    - L12449: H3 Add Comment
+    - L12470: H3 Comment style
+    - L12996: H3 List recovery actions for an issue
+  - L13127: H2 Issue Lifecycle
+    - L13236: H3 Blockers (`blockedByIssueIds`)
+    - L13244: H3 Hidden issues
+  - L13449: H2 Linked Issues
+  - L13552: H2 Comments
+  - L13650: H2 Comments
+  - L15290: H2 Issue activity
+  - L15343: H2 Runs for an issue
+  - L15372: H2 Issues for a run
+  - L16610: H2 Local Workflow
+  - L16873: H2 Issue Commands
+  - L17385: H2 `issue`
+    - L17387: H3 `paperclipai issue list`
+    - L17403: H3 `paperclipai issue get <idOrIdentifier>`
+    - L17411: H3 `paperclipai issue create`
+    - L17437: H3 `paperclipai issue update <issueId>`
+    - L17465: H3 `paperclipai issue comment <issueId>`
+    - L17478: H3 `paperclipai issue checkout <issueId>`
+    - L17491: H3 `paperclipai issue release <issueId>`
+    - L17620: H3 `paperclipai approval comment <approvalId>`
+    - L18203: H3 Triage and update an issue
+  - L20644: H2 Example Workflow
 
 ## plugins_mcp
 
-  - L3221: H2 What a skill looks like
-  - L3259: H2 Adding a skill
-    - L3281: H3 Creating a skill from scratch
-  - L3358: H2 What makes a good skill
-  - L6682: H2 What MCP is
-  - L7040: H2 2. Author the skill on disk
-  - L7218: H2 6. Trigger the skill in a test run
-- L8916: H1 Plugins
-  - L8925: H2 The Plugin Manager
-  - L9015: H2 The plugin detail page
-  - L9030: H2 Plugin settings
-  - L9080: H2 Authoring your own plugin
-  - L16249: H2 `plugin`
-  - L16504: H2 1. Skill file shape
-    - L16848: H3 "I imported the skill but it's not in the list"
+    - L3375: H3 Each skill row
+  - L3700: H2 What a skill looks like
+  - L3741: H2 Adding a skill
+    - L3765: H3 Creating a skill from scratch
+  - L3848: H2 What makes a good skill
+  - L7249: H2 What MCP is
+  - L7635: H2 2. Author the skill on disk
+  - L7829: H2 6. Trigger the skill in a test run
+- L9117: H1 Develop a plugin locally
+- L9123: H1 Develop a plugin locally
+  - L9164: H2 2. Scaffold the plugin
+- L9854: H1 Plugins
+- L9860: H1 Plugins
+  - L9870: H2 The Plugin Manager
+  - L9973: H2 The plugin detail page
+  - L9994: H2 Plugin settings
+  - L10044: H2 Authoring your own plugin
+    - L10055: H3 Developing plugins locally
+- L16348: H1 Plugins
+  - L17786: H2 `plugin`
+  - L18243: H2 1. Skill file shape
+    - L18610: H3 "I imported the skill but it's not in the list"
+    - L18627: H3 "The skill row exists but the file viewer shows nothing"
+    - L18632: H3 "GitHub skill is stuck on an old commit"
+    - L18650: H3 "I deleted a skill and it came back"
+- L21092: H1 Plugin SDK
+- L21098: H1 Plugin SDK
+    - L21139: H3 Plugin definition
+    - L21149: H3 Plugin context
 
 ## security_secrets
 
-  - L6515: H2 3. GitHub auth
-    - L6519: H3 Option A — Personal Access Token (PAT) — fast path
-  - L8326: H2 Signing + secrets
-    - L9037: H3 Secrets
-  - L9229: H2 After claiming: using and rotating the token
-    - L9231: H3 Where the token lives
-  - L9311: H2 Authentication
-- L9528: H1 Authentication
-  - L9545: H2 How request auth is resolved
-  - L9575: H2 Board authentication
-- L13394: H1 Secrets
-  - L13488: H2 List Secrets
-  - L13543: H2 Create Secret
-  - L13624: H2 Update Secret
-  - L13693: H2 Rotate Secret
-  - L13767: H2 Delete Secret
-  - L14775: H2 Rotate Trigger Secret
-  - L16329: H2 `auth`
-  - L17877: H2 Device Auth
-  - L18622: H2 Security
-  - L18953: H2 `authenticated`
-    - L18959: H3 `authenticated` + `private`
-- L19437: H1 Secrets
-  - L19459: H2 Configure Secrets
-  - L19506: H2 Migrate Inline Secrets
-  - L19588: H2 Secrets
+  - L7056: H2 3. GitHub auth
+    - L7060: H3 Option A — Personal Access Token (PAT) — fast path
+    - L7109: H3 What about `gh auth login` on the host?
+  - L9055: H2 Signing + secrets
+    - L10004: H3 Secrets
+  - L10218: H2 After claiming: using and rotating the token
+    - L10220: H3 Where the token lives
+  - L10307: H2 Authentication
+- L10529: H1 Authentication
+  - L10546: H2 How request auth is resolved
+  - L10583: H2 Board authentication
+    - L10592: H3 Session auth
+- L14543: H1 Secrets
+  - L14647: H2 List Secrets
+  - L14704: H2 Create Secret
+  - L14790: H2 Update Secret
+  - L14865: H2 Rotate Secret
+  - L14943: H2 Delete Secret
+  - L15968: H2 Rotate Trigger Secret
+  - L17867: H2 `auth`
+  - L17955: H2 `secrets`
+  - L19987: H2 Device Auth
+  - L20873: H2 Security
+    - L21529: H3 Authenticated + Private
+    - L21536: H3 Authenticated + Public
+  - L21636: H2 `authenticated`
+    - L21644: H3 `authenticated` + `private`
+    - L21671: H3 `authenticated` + `public`
+- L22185: H1 Secrets
+  - L22209: H2 Configure Secrets
+  - L22268: H2 Secrets At The Instance Level
+  - L22276: H2 Migrate Inline Secrets
+  - L22383: H2 Secrets
 
 ## workspaces_execution
 
-    - L2372: H3 Quick report in the terminal
-    - L3078: H3 Execution model
-    - L3264: H3 1. Import from a GitHub repository
-  - L3558: H2 Reporting lines visualization
-  - L4339: H2 Workspaces Tab
-    - L4344: H3 What a workspace row represents
-- L5036: H1 Workspaces
-  - L5044: H2 How execution workspaces relate to projects
-  - L5057: H2 Workspace modes
-  - L5087: H2 Workspace inheritance
-  - L5095: H2 Workspace lifecycle
-  - L5125: H2 Workspace list
-    - L5151: H3 Workspace commands panel
-  - L5354: H2 Isolation and git worktrees
-- L5428: H1 Execution Policy
-  - L6468: H2 2. Configure the project workspace
-  - L7566: H2 Example repo
-    - L12079: H3 Review stages and `executionState`
-  - L12867: H2 Project Workspaces
-  - L13015: H2 Reporting Usage
-  - L16133: H2 `worktree`
-    - L16403: H3 Worktree commands
-  - L17424: H2 Execution Details
-  - L17521: H2 Execution Details
-  - L17624: H2 Execution Details
-    - L17704: H3 Session & workspace
-  - L17777: H2 Execution Details
-  - L19156: H2 Worktrees And Isolated Instances
+    - L2885: H3 Quick report in the terminal
+    - L3148: H3 Role and reporting chain
+    - L3565: H3 Execution model
+    - L3747: H3 1. Import from a GitHub repository
+  - L4077: H2 Reporting lines visualization
+    - L4746: H3 Relationship to execution workspaces
+  - L4752: H2 Workspaces Tab
+    - L4758: H3 What a workspace row represents
+    - L4769: H3 Project primary vs. isolated workspaces
+    - L4792: H3 Repository binding and working directory
+    - L4810: H3 Execution workspace configuration
+- L5457: H1 Workspaces
+  - L5467: H2 How execution workspaces relate to projects
+  - L5482: H2 Workspace modes
+  - L5516: H2 Workspace inheritance
+  - L5526: H2 Workspace lifecycle
+  - L5555: H2 Workspace list
+    - L5589: H3 Workspace commands panel
+    - L5605: H3 Workspace settings
+    - L5636: H3 Workspace context
+  - L5789: H2 Isolation and git worktrees
+- L5877: H1 Execution Policy
+  - L7005: H2 2. Configure the project workspace
+  - L8218: H2 Example repo
+    - L13230: H3 Review stages and `executionState`
+  - L14049: H2 Project Workspaces
+    - L14068: H3 List Workspaces
+    - L14076: H3 Create Workspace
+    - L14091: H3 Update Workspace
+    - L14103: H3 Delete Workspace
+    - L14111: H3 Workspace Runtime Services
+  - L14196: H2 Reporting Usage
+  - L16516: H2 Execution workspaces
+  - L17667: H2 `worktree`
+    - L18133: H3 Worktree commands
+    - L18852: H3 Resuming a session's workspace
+  - L19222: H2 Execution Details
+  - L19330: H2 Execution Details
+  - L19422: H2 Execution Details
+  - L19510: H2 Execution Details
+  - L19617: H2 Execution Details
+    - L19698: H3 Session & workspace
+  - L19776: H2 Execution Details
+  - L21858: H2 Worktrees And Isolated Instances
