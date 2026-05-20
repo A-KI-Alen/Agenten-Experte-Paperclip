@@ -184,7 +184,7 @@
 - L6968: H1 Connect an agent to a GitHub repo and have it open PRs
   - L7123: H2 4. The agent instructions: PR-driven work
   - L7440: H2 4. Per-agent scoping rules
-  - L7463: H2 5. Debugging: which tools does the agent actually have?
+  - L7463: H2 5. Debugging: which tools does the agent actually have
     - L7482: H3 b. Read the agent's run transcript
 - L7592: H1 Write a company skill and assign it to specific agents
     - L7704: H3 From a GitHub repo or skills.sh
@@ -274,7 +274,7 @@
 
 ## api_cli
 
-- L85: H1 What is Paperclip?
+- L85: H1 What is Paperclip
   - L146: H2 A note on what Paperclip is not
   - L383: H2 Step 2 — Download Paperclip Desktop
   - L405: H2 Step 4 — Open Paperclip
@@ -492,7 +492,7 @@
   - L91: H2 The idea
   - L103: H2 What you can do with it
   - L113: H2 What it looks like
-  - L123: H2 Who is it for?
+  - L123: H2 Who is it for
   - L131: H2 What you need to get started
 - L165: H1 Key Concepts
   - L371: H2 Step 1 — Check which Mac you have
@@ -1242,7 +1242,7 @@
 ## installation_deployment
 
   - L26: H2 Before the path: install Paperclip
-  - L154: H2 Ready to install?
+  - L154: H2 Ready to install
 - L355: H1 Installation
   - L396: H2 Step 3 — Install the app
   - L477: H2 Step 1 — Install Node.js 20 or later
@@ -1426,7 +1426,7 @@
 
   - L7056: H2 3. GitHub auth
     - L7060: H3 Option A — Personal Access Token (PAT) — fast path
-    - L7109: H3 What about `gh auth login` on the host?
+    - L7109: H3 What about `gh auth login` on the host
   - L9055: H2 Signing + secrets
     - L10004: H3 Secrets
   - L10218: H2 After claiming: using and rotating the token
