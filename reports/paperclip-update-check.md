@@ -1,6 +1,6 @@
 # Paperclip Source Update Check
 
-- Checked UTC: `2026-05-28T08:37:23Z`
+- Checked UTC: `2026-05-28T08:38:24Z`
 - Update needed: `false`
 
 ## Reasons
@@ -11,7 +11,7 @@
 
 ```json
 {
-  "checked_utc": "2026-05-28T08:36:22Z",
+  "checked_utc": "2026-05-28T08:38:13Z",
   "repos": {
     "paperclip_repo": {
       "repo": "paperclipai/paperclip",
@@ -47,11 +47,11 @@
     },
     "clipmart_repo": {
       "repo": "paperclipai/clipmart",
-      "error": "HTTP Error 403: rate limit exceeded"
+      "latest_commit": "36e79af9ade227eb5ca216081226fa489fa14810"
     },
     "org_profile_repo": {
       "repo": "paperclipai/.github",
-      "error": "HTTP Error 403: rate limit exceeded"
+      "latest_commit": "e866366272cdf221f71b637a90c8e5e2f39142de"
     }
   },
   "sites": {
@@ -91,7 +91,7 @@
 
 ```json
 {
-  "checked_utc": "2026-05-28T08:37:12Z",
+  "checked_utc": "2026-05-28T08:38:13Z",
   "repos": {
     "paperclip_repo": {
       "repo": "paperclipai/paperclip",
