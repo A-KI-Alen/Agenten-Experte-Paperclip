@@ -7,6 +7,7 @@ import argparse
 import hashlib
 import json
 import os
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -68,10 +69,33 @@ def request_json(url: str) -> dict[str, Any]:
 
 
 def latest_commit(repo: str) -> str:
-    payload = request_json(f"https://api.github.com/repos/{repo}")
-    branch = payload["default_branch"]
-    commit = request_json(f"https://api.github.com/repos/{repo}/commits/{branch}")
-    return commit["sha"]
+    """Return latest default-branch commit SHA for a GitHub repo.
+
+    Prefer GitHub API (optionally authenticated). Fall back to `git ls-remote`
+    against the public HTTPS remote to avoid unauthenticated API rate limits.
+    """
+
+    try:
+        payload = request_json(f"https://api.github.com/repos/{repo}")
+        branch = payload["default_branch"]
+        commit = request_json(f"https://api.github.com/repos/{repo}/commits/{branch}")
+        return commit["sha"]
+    except (HTTPError, URLError, TimeoutError, KeyError):
+        # Fallback: use the remote's advertised HEAD (default branch).
+        # Example output:
+        #   <sha>\tHEAD
+        output = subprocess.check_output(
+            ["git", "ls-remote", f"https://github.com/{repo}.git", "HEAD"],
+            text=True,
+            encoding="utf-8",
+            timeout=30,
+        ).strip()
+        if not output:
+            raise
+        sha = output.split()[0]
+        if len(sha) < 40:
+            raise RuntimeError(f"Unexpected ls-remote output for {repo}: {output!r}")
+        return sha
 
 
 def site_fingerprint(url: str) -> str:

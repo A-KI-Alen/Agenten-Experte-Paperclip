@@ -4,19 +4,19 @@ Routing-Werkzeug fuer CEO, Collector und Paperclip Specialist.
 
 | Topic | Headings | Activation terms |
 | --- | ---: | --- |
-| `activity_debugging` | 37 | run transcript, activity log, failed runs, troubleshooting and diagnostics |
-| `adapters_runtime` | 63 | adapter types, local/remote invocation, heartbeat model, runtime errors |
-| `agents_org` | 159 | companies, CEO, agents, hiring, org structure, skills and instructions |
-| `api_cli` | 89 | Paperclip API, CLI, curl examples, webhooks and automation |
-| `approvals_governance` | 35 | approval queue, strategy approvals, hire approvals, board override powers |
-| `costs_budgets` | 58 | cost ledger, budgets, provider/biller/finance tabs, spend control |
+| `activity_debugging` | 40 | run transcript, activity log, failed runs, troubleshooting and diagnostics |
+| `adapters_runtime` | 62 | adapter types, local/remote invocation, heartbeat model, runtime errors |
+| `agents_org` | 173 | companies, CEO, agents, hiring, org structure, skills and instructions |
+| `api_cli` | 96 | Paperclip API, CLI, curl examples, webhooks and automation |
+| `approvals_governance` | 37 | approval queue, strategy approvals, hire approvals, board override powers |
+| `costs_budgets` | 63 | cost ledger, budgets, provider/biller/finance tabs, spend control |
 | `data_export` | 16 | exports, audit traces, remote sync and data lifecycle |
-| `general` | 754 | general Paperclip concepts and uncategorized docs |
-| `installation_deployment` | 65 | install, server deployment, systemd, nginx, docker, database setup |
-| `issues_workflow` | 80 | issues, task lifecycle, comments, status changes, inbox and checkout patterns |
-| `plugins_mcp` | 29 | plugin SDK, MCP server, skills and tool integration |
-| `security_secrets` | 33 | secrets, API keys, JWTs, bearer tokens, authentication and redaction |
-| `workspaces_execution` | 44 | execution workspaces, worktrees, GitHub credentials, PR/code workflows |
+| `general` | 814 | general Paperclip concepts and uncategorized docs |
+| `installation_deployment` | 69 | install, server deployment, systemd, nginx, docker, database setup |
+| `issues_workflow` | 78 | issues, task lifecycle, comments, status changes, inbox and checkout patterns |
+| `plugins_mcp` | 26 | plugin SDK, MCP server, skills and tool integration |
+| `security_secrets` | 38 | secrets, API keys, JWTs, bearer tokens, authentication and redaction |
+| `workspaces_execution` | 46 | execution workspaces, worktrees, GitHub credentials, PR/code workflows |
 
 ## Escalation Flow
 
