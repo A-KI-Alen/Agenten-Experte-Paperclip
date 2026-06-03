@@ -1,13 +1,13 @@
 {
-  "checked_utc": "2026-05-28T08:38:13Z",
+  "checked_utc": "2026-06-03T15:32:04Z",
   "repos": {
     "paperclip_repo": {
       "repo": "paperclipai/paperclip",
-      "latest_commit": "8da50dbcf8f98e82fb313c1fb023c13047d44bb6"
+      "latest_commit": "70b1a9109d756818fb448beafa67af27babb52de"
     },
     "paperclip_docs_repo": {
       "repo": "paperclipai/paperclip-docs",
-      "latest_commit": "67a1777caebdc34a341486a2b8ad909246153089"
+      "latest_commit": "9e7a098e6cfe6f0357f927fe939a912f027da559"
     },
     "paperclip_legacy_docs_repo": {
       "repo": "paperclipai/docs",
@@ -15,7 +15,7 @@
     },
     "paperclip_website_repo": {
       "repo": "paperclipai/paperclip-website",
-      "latest_commit": "3720aeaaf3c6f9d0b7d3cd4858f45b0212d73654"
+      "latest_commit": "3c9f242de9de3f6ead61046a5bfecb4f00423622"
     },
     "hermes_adapter_repo": {
       "repo": "paperclipai/hermes-paperclip-adapter",
@@ -45,31 +45,31 @@
   "sites": {
     "docs_site": {
       "url": "https://docs.paperclip.ing/",
-      "sha256": "8d2a0eeb021b1d6412a28166f499ae8507d5c938ee6187f65545cdb2f05ff598"
+      "sha256": "7b72124466afd092874cbff023034e837360d4271fe73513f1f2d2084194e4f7"
     },
     "main_docs_entry": {
       "url": "https://paperclip.ing/docs",
-      "sha256": "8d2a0eeb021b1d6412a28166f499ae8507d5c938ee6187f65545cdb2f05ff598"
+      "sha256": "7b72124466afd092874cbff023034e837360d4271fe73513f1f2d2084194e4f7"
     }
   },
   "npm": {
     "paperclipai": {
-      "version": "2026.525.0"
+      "version": "2026.529.0"
     },
     "@paperclipai/server": {
-      "version": "2026.525.0"
+      "version": "2026.529.0"
     },
     "@paperclipai/plugin-sdk": {
-      "version": "2026.525.0"
+      "version": "2026.529.0"
     },
     "@paperclipai/mcp-server": {
-      "version": "2026.525.0"
+      "version": "2026.529.0"
     },
     "@paperclipai/ui": {
-      "version": "2026.525.0"
+      "version": "2026.529.0"
     },
     "@paperclipai/db": {
-      "version": "2026.525.0"
+      "version": "2026.529.0"
     }
   }
 }
