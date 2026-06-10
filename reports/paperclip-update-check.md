@@ -1,6 +1,6 @@
 # Paperclip Source Update Check
 
-- Checked UTC: `2026-06-03T15:32:19Z`
+- Checked UTC: `2026-06-10T04:35:35Z`
 - Update needed: `false`
 
 ## Reasons
@@ -11,11 +11,11 @@
 
 ```json
 {
-  "checked_utc": "2026-06-03T15:32:04Z",
+  "checked_utc": "2026-06-10T04:35:25Z",
   "repos": {
     "paperclip_repo": {
       "repo": "paperclipai/paperclip",
-      "latest_commit": "70b1a9109d756818fb448beafa67af27babb52de"
+      "latest_commit": "058381349ec72d5bbffbb0c227d9fe576d3ce996"
     },
     "paperclip_docs_repo": {
       "repo": "paperclipai/paperclip-docs",
@@ -27,7 +27,7 @@
     },
     "paperclip_website_repo": {
       "repo": "paperclipai/paperclip-website",
-      "latest_commit": "3c9f242de9de3f6ead61046a5bfecb4f00423622"
+      "latest_commit": "55444cbdb6594c23f3db0945c956858363aba4c9"
     },
     "hermes_adapter_repo": {
       "repo": "paperclipai/hermes-paperclip-adapter",
@@ -66,22 +66,22 @@
   },
   "npm": {
     "paperclipai": {
-      "version": "2026.529.0"
+      "version": "2026.609.0"
     },
     "@paperclipai/server": {
-      "version": "2026.529.0"
+      "version": "2026.609.0"
     },
     "@paperclipai/plugin-sdk": {
-      "version": "2026.529.0"
+      "version": "2026.609.0"
     },
     "@paperclipai/mcp-server": {
-      "version": "2026.529.0"
+      "version": "2026.609.0"
     },
     "@paperclipai/ui": {
-      "version": "2026.529.0"
+      "version": "2026.609.0"
     },
     "@paperclipai/db": {
-      "version": "2026.529.0"
+      "version": "2026.609.0"
     }
   }
 }
@@ -91,11 +91,11 @@
 
 ```json
 {
-  "checked_utc": "2026-06-03T15:32:04Z",
+  "checked_utc": "2026-06-10T04:35:25Z",
   "repos": {
     "paperclip_repo": {
       "repo": "paperclipai/paperclip",
-      "latest_commit": "70b1a9109d756818fb448beafa67af27babb52de"
+      "latest_commit": "058381349ec72d5bbffbb0c227d9fe576d3ce996"
     },
     "paperclip_docs_repo": {
       "repo": "paperclipai/paperclip-docs",
@@ -107,7 +107,7 @@
     },
     "paperclip_website_repo": {
       "repo": "paperclipai/paperclip-website",
-      "latest_commit": "3c9f242de9de3f6ead61046a5bfecb4f00423622"
+      "latest_commit": "55444cbdb6594c23f3db0945c956858363aba4c9"
     },
     "hermes_adapter_repo": {
       "repo": "paperclipai/hermes-paperclip-adapter",
@@ -146,22 +146,22 @@
   },
   "npm": {
     "paperclipai": {
-      "version": "2026.529.0"
+      "version": "2026.609.0"
     },
     "@paperclipai/server": {
-      "version": "2026.529.0"
+      "version": "2026.609.0"
     },
     "@paperclipai/plugin-sdk": {
-      "version": "2026.529.0"
+      "version": "2026.609.0"
     },
     "@paperclipai/mcp-server": {
-      "version": "2026.529.0"
+      "version": "2026.609.0"
     },
     "@paperclipai/ui": {
-      "version": "2026.529.0"
+      "version": "2026.609.0"
     },
     "@paperclipai/db": {
-      "version": "2026.529.0"
+      "version": "2026.609.0"
     }
   }
 }
